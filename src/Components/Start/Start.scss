@@ -1,0 +1,21 @@
+
+#home {
+    //background-image: url('../img/forest.jpg');
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+    h1 {
+        font-size: 50px;
+        color: white;
+    }
+
+}
+
+#home > div {
+    padding: 50px;
+}

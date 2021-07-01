@@ -1,12 +1,17 @@
 import React from 'react';
+import './Start.scss';
 
 
 class Start extends React.Component {
 
     render() {
-        return <div>
-            Start
+        return <section id="home">
+        <div>
+            <h1>Hello!</h1>
+            <h1>I’m Emely Garcia</h1>
+            <h1>Web Developer</h1>
         </div>
+        </section>
     }
 }
 

@@ -1,13 +1,18 @@
 
 #home {
-    //background-image: url('../img/forest.jpg');
+    background-image: url('../../assets/background-2.jpg');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
 
     h1 {
         font-size: 50px;
-        color: white;
+        color: #1D1D1D;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
     }
 
 }

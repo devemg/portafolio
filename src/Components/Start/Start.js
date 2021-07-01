@@ -2,6 +2,10 @@ import React from 'react';
 import './Start.scss';
 
 
+/**
+ * 1st Section
+ * Start screen 
+ */
 class Start extends React.Component {
 
     render() {

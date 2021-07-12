@@ -20,3 +20,9 @@
 #home > div {
     padding: 50px;
 }
+
+@media screen and (max-width:360px) { 
+    #home > div {
+        padding: 50px 10px 50px 15px;
+    }
+}

@@ -39,6 +39,54 @@ const contact = [
   }
 ];
 
+const languages = [
+  {
+    name: 'Javascript',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Typescript',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Java',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Python',
+    icon: '',
+    stared: false
+  },
+  {
+    name: 'C++',
+    icon: '',
+    stared: false
+  },
+  {
+    name: 'C#',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'php',
+    icon: '',
+    stared: false
+  },
+  {
+    name: 'Visual Basic',
+    icon: '',
+    stared: false
+  },
+  {
+    name: 'Kotlin',
+    icon: '',
+    stared: false
+  }
+];
+
 /**
  * Principal component
  * @returns 
@@ -48,8 +96,14 @@ function App() {
     <div>
       <Start />
       <Message />
-      <Skills />
-      <Projects value = {projects} />
+      <Skills 
+      languages = {languages}
+      frameworks = {[]}
+      cloud = {[]}
+      devops = {[]}
+      databases = {[]}
+      tools = {[]}
+       />
       <Footer accounts= {contact} />
     </div>
   );

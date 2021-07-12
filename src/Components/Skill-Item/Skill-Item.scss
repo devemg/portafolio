@@ -1,0 +1,26 @@
+#skill-item {
+    padding-left: 2em;
+    padding-right: 2em;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .item-grid {
+        width: 100%;
+        display: flex;
+        padding: 1em;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+

@@ -87,6 +87,124 @@ const languages = [
   }
 ];
 
+const frameworks = [
+  {
+    name: 'Angular',
+    icon: '',
+    stared:true,
+    front: true
+  },
+  {
+    name: 'JQuery',
+    icon: '',
+    stared: true,
+    front: true
+  },
+  {
+    name: 'React',
+    icon: '',
+    front: true,
+    stared: true
+  },
+  {
+    name: 'CodeIgniter',
+    icon: '',
+    stared:false,
+    front: false
+  },
+  {
+    name:'express',
+    icon: '',
+    stared: true,
+    front: false
+  }
+];
+
+const cloud = [
+  {
+    name: 'AWS',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Google Cloud',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Digital Ocean',
+    icon: '',
+    stared: true
+  },
+  {
+    name: 'Azure',
+    icon: '',
+    stared: true
+  }
+];
+
+const databases = [
+  {
+    name: 'MySQL',
+    stared: true
+  },
+  {
+    name: 'Oracle'
+  },
+  {
+    name: 'SQL Server'
+  },
+  {
+    name: 'MongoDB',
+    stared: true
+  },
+  {
+    name: 'DynamoDB',
+    stared: true
+
+  }
+];
+
+const devops = [
+  {
+    name: 'Gitlab CI',
+    stared: true
+  },
+
+  {
+    name: 'Jenkins',
+    stared: true
+  }
+];
+
+
+const tools = [
+  {
+    name: 'Visual Code',
+    stared: true
+  },
+  {
+    name: 'Visual Studio',
+    status: true
+  },
+  {
+    name: 'Apache netbeans',
+    stared: false
+  },
+  {
+    name: 'IntelliJ IDEA',
+    stared: true
+  },
+  {
+    name: 'Data Grip',
+    stared: true
+  },
+  {
+    name: 'WebStorm',
+    status: true
+  }
+];
+
 /**
  * Principal component
  * @returns 
@@ -98,11 +216,11 @@ function App() {
       <Message />
       <Skills 
       languages = {languages}
-      frameworks = {[]}
-      cloud = {[]}
-      devops = {[]}
-      databases = {[]}
-      tools = {[]}
+      frameworks = {frameworks}
+      cloud = {cloud}
+      devops = {devops}
+      databases = {databases}
+      tools = {tools}
        />
       <Footer accounts= {contact} />
     </div>

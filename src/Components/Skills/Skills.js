@@ -14,7 +14,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>Lenguajes</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/4260/4260876.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626131123/my-portfolio/software-development_1_beajtn.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.languages.filter(element=>element.stared)
@@ -28,7 +28,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>FrameWorks y Librerías</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/2519/2519443.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_1_kmfoqy.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.frameworks.filter(element=>element.stared)
@@ -42,7 +42,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>Cloud</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/2637/2637212.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_lwpqdi.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.cloud.filter(element=>element.stared)
@@ -56,7 +56,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>Bases de datos</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/2906/2906206.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626131868/my-portfolio/database-storage_1_oeookf.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.databases.filter(element=>element.stared)
@@ -70,7 +70,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>DevOps</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/2196/2196157.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626130396/my-portfolio/eternity_1_1_h0og5s.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.devops.filter(element=>element.stared)
@@ -84,7 +84,7 @@ class Skills extends React.Component {
                 <div className="item-grid">
                     <div className="front">
                         <h2>IDEs y herramientas</h2>
-                        <img src="https://image.flaticon.com/icons/png/512/1197/1197460.png" alt="lenguajes" />
+                        <img src="https://res.cloudinary.com/devemg/image/upload/v1626131583/my-portfolio/repair_1_1_umg055.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
                     {this.props.tools.filter(element=>element.stared)

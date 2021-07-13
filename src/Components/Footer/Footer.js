@@ -11,6 +11,7 @@ class Footer extends React.Component {
         dfwef
             </div>
             <div className="footer-right">
+                <h3>Contacta conmigo</h3>
             {
                 this.props.accounts.map(element=>{
                     return <a 

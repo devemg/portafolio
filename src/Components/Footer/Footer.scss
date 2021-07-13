@@ -22,6 +22,12 @@ footer {
         width: 30%;
         padding: 1em;
 
+        h3 {
+            font-size: 1.92em;
+            width: 100%;
+            text-align: left;
+        }
+
         .item {
             padding-top: 10px;
             padding-bottom: 10px;
@@ -38,5 +44,24 @@ footer {
             font-weight: bold;
         }
 
+    }
+}
+
+
+@media screen and (max-width:863px) {
+    #footer {
+        flex-direction: column;
+
+        .footer-right {
+            width: 100%;
+            padding-left: 2em;
+            padding-right: 2em;
+
+            h3 {
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }

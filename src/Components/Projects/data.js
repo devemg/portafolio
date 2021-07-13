@@ -1,88 +1,30 @@
 // Gradients taken from: https://webgradients.com/
-export default [
-    {
-      name: 'Rare Wind',
-      description: '#a8edea → #fed6e3',
-      css: 'linear-gradient(to top, #a8edea 0%, #fed6e3 100%)',
-      height: 200
-    },
-    {
-      name: 'Saint Petersburg',
-      description: '#f5f7fa → #c3cfe2',
-      css: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
-      height: 400
-    },
-    {
-      name: 'Deep Blue',
-      description: '#e0c3fc → #8ec5fc',
-      css: 'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
-      height: 400
-    },
-    {
-      name: 'Ripe Malinka',
-      description: '#f093fb → #f5576c',
-      css: 'linear-gradient(120deg, #f093fb 0%, #f5576c 100%)',
-      height: 400
-    },
-    {
-      name: 'Perfect White',
-      description: '#fdfbfb → #ebedee',
-      css: 'linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%)',
-      height: 400
-    },
-    {
-      name: 'Near Moon',
-      description: '#5ee7df → #b490ca',
-      css: 'linear-gradient(to top, #5ee7df 0%, #b490ca 100%)',
-      height: 400
-    },
-    {
-      name: 'Wild Apple',
-      description: '#d299c2 → #fef9d7',
-      css: 'linear-gradient(to top, #d299c2 0%, #fef9d7 100%)',
-      height: 200
-    },
-    {
-      name: 'Ladoga Bottom',
-      description: '#ebc0fd → #d9ded8',
-      css: 'linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%)',
-      height: 400
-    },
-    {
-      name: 'Sunny Morning',
-      description: '#f6d365 → #fda085',
-      css: 'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
-      height: 200
-    },
-    {
-      name: 'Lemon Gate',
-      description: '#96fbc4 → #f9f586',
-      css: 'linear-gradient(to top, #96fbc4 0%, #f9f586 100%)',
-      height: 400
-    },
-    {
-      name: 'Salt Mountain',
-      description: ' #FFFEFF → #D7FFFE',
-      css: 'linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)',
-      height: 200
-    },
-    {
-      name: 'New York',
-      description: ' #fff1eb → #ace0f9',
-      css: 'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)',
-      height: 400
-    },
-    {
-      name: 'Soft Grass',
-      description: ' #c1dfc4 → #deecdd',
-      css: 'linear-gradient(to top, #c1dfc4 0%, #deecdd 100%)',
-      height: 400
-    },
-    {
-      name: 'Japan Blush',
-      description: ' #ddd6f3 → #faaca8',
-      css: 'linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
-      height: 200
-    }
+const list =  [
+  {
+    id:'123',
+    name: 'RandomAQ',
+    description: `RandomAQ es una applicación de preguntas y respuestas. 
+    Está compuesta por dos aplicaciones: 
+    Un panel de administración, desarrollado en Angular, en donde se ingresan las categorías, preguntas y respuestas.
+    Y, una aplicación móvil, desarrollada en Ionic, en donde se elige una categoría y se genera una pregunta aleatoria con un 
+    temporizador de 30 segundos para contestar la pregunta.`,
+    demoDescription: 'A continuación se encuentra el enlace para acceder al panel de administración. ',
+    demoUrl: 'https://random-aq.herokuapp.com/',
+    logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
+    height: 400,
+    background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)'
+  },
+  {
+    id:'456',
+    name: 'FastMessages',
+    description: `FastMessages es una aplicación de mensajería, desarrollada con el stack MEAN y socket.io. Permite la creación de cuentas,
+    inicio de sesión, agregar o eliminar contactos y mensajería instantánea. `,
+    demoDescription: 'A continuación se encuentra una demostración del frontend con data generada de forma aletoria.',
+    demoUrl: 'https://devemg.github.io/fast-msg-fe/',
+    height: 400,
+    background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
+    logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg'
+  }
   ]
-  
+;
+export default list;

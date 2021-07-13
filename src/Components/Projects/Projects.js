@@ -22,7 +22,7 @@ class Projects extends React.Component {
             </div>
           })
         }
-        {/*<ProjectDetail project={data[0]} /> */}
+        <ProjectDetail project={data[0]} />
       </div>
     </section>
   }

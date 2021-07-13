@@ -10,9 +10,15 @@ const list =  [
     temporizador de 30 segundos para contestar la pregunta.`,
     demoDescription: 'A continuación se encuentra el enlace para acceder al panel de administración. ',
     demoUrl: 'https://random-aq.herokuapp.com/',
+    codeUrl:'https://github.com/devemg/randomAQ',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
     height: 400,
-    background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)'
+    background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)',
+    credentials: {
+      user: 'invitado@invitado.com',
+      password:'invitado',
+      description:'Utiliza las siguientes credenciales para ingresar.'
+    }
   },
   {
     id:'456',
@@ -21,6 +27,7 @@ const list =  [
     inicio de sesión, agregar o eliminar contactos y mensajería instantánea. `,
     demoDescription: 'A continuación se encuentra una demostración del frontend con data generada de forma aletoria.',
     demoUrl: 'https://devemg.github.io/fast-msg-fe/',
+    codeUrl:'https://github.com/devemg/fast-msg-fe',
     height: 400,
     background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg'

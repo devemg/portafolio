@@ -6,8 +6,9 @@ import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGitlab, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 // add font awesome icons
-library.add(fab, faGitlab,faGithub);
+library.add(fab, faGitlab,faGithub, faTimes);
 
 const contact = [
   {

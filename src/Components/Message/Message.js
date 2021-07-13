@@ -1,5 +1,7 @@
 import React from 'react';
 import './Message.scss';
+import Particles from 'react-particles-js';
+
 
 /**
  * 2nd Section
@@ -9,8 +11,11 @@ class Message extends React.Component {
 
     render() {
         return <section id="message">
-        <div>
+        <Particles className="background" />
+        <div className="container-message">
+            <div className="message">
             <p>{this.props.message}</p>
+            </div>
         <div className="signature">
             {/*<h3>- Emely</h3> */}
         </div>

@@ -19,7 +19,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.languages.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}
@@ -33,7 +33,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.frameworks.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}
@@ -47,7 +47,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.cloud.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}
@@ -61,7 +61,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.databases.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}
@@ -75,7 +75,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.devops.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}
@@ -89,7 +89,7 @@ class Skills extends React.Component {
                     <ul className="list">
                     {this.props.tools.filter(element=>element.stared)
                     .map(element=>{
-                        return <li className="float-item">
+                        return <li className="float-item" key={element.name}>
                             {element.name}
                         </li> 
                     })}

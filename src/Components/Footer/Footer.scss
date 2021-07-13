@@ -1,0 +1,42 @@
+
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #161616;
+
+    .footer-left {
+        width: 50%;
+    }
+    
+    .footer-right {
+        width: 30%;
+        padding: 1em;
+
+        .item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+            p {
+                margin: 0;
+                padding: 0 0 0 1em;
+            }
+        }
+
+        .item:hover {
+            font-weight: bold;
+        }
+
+    }
+}

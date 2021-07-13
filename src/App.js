@@ -4,15 +4,39 @@ import Start from './Components/Start/Start';
 import Message from './Components/Message/Message'
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGitlab, faGithub } from '@fortawesome/free-brands-svg-icons'
+// add font awesome icons
+library.add(fab, faGitlab,faGithub);
 
 const contact = [
   {
-    title: 'Github',
-    url: 'https://github.com/devemg'
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/in/emely-garciam',
+    icon: 'linkedin',
+    user: 'Emely García',
+    color: '#0e76a8'
   },
   {
-    title: 'Gitlab',
-    url: 'https://gitlab.com/devemg'
+    name: 'Gmail',
+    url: 'mailto:garciam.emm@gmail.com',
+    icon: 'google',
+    user: 'garciam.emm@gmail.com',
+    color: '#ea4335'
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/devemg',
+    icon: 'github',
+    user: 'devemg',
+    color: '#FFFF'
+  },
+  {
+    name: 'Gitlab',
+    url: 'https://gitlab.com/devemg',
+    icon: 'gitlab',
+    user: 'devemg',
+    color: '#fc6d26'
   }
 ];
 

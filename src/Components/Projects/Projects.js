@@ -9,7 +9,7 @@ import ProjectDetail from '../Project-detail/Project-detail';
  */
 class Projects extends React.Component {
 
-  state  = {selected: data[0]};
+  state  = {selected: null };
 
   showProject = (element)=>{
     document.body.classList.add('modal-open');

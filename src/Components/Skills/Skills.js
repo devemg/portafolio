@@ -9,11 +9,11 @@ class Skills extends React.Component {
 
     render() {
         return <section id="skills">
-            <h1 className="title">Habilidades</h1>
+            <h1 className="title">Mis Habilidades</h1>
             <div className="grid">
                 <div className="item-grid">
                     <div className="front">
-                        <h2>Lenguajes</h2>
+                        <h2>Lenguajes de Programación</h2>
                         <img src="https://res.cloudinary.com/devemg/image/upload/v1626131123/my-portfolio/software-development_1_beajtn.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
@@ -27,7 +27,7 @@ class Skills extends React.Component {
                 </div>
                 <div className="item-grid">
                     <div className="front">
-                        <h2>FrameWorks y Librerías</h2>
+                        <h2>FrameWorks y librerías</h2>
                         <img src="https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_1_kmfoqy.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">
@@ -55,7 +55,7 @@ class Skills extends React.Component {
                 </div>
                 <div className="item-grid">
                     <div className="front">
-                        <h2>Bases de datos</h2>
+                        <h2>Bases de Datos</h2>
                         <img src="https://res.cloudinary.com/devemg/image/upload/v1626131868/my-portfolio/database-storage_1_oeookf.svg" alt="lenguajes" />
                     </div>
                     <ul className="list">

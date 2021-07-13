@@ -121,6 +121,12 @@ const frameworks = [
     icon: '',
     stared: true,
     front: false
+  },
+  {
+    name: 'ionic',
+    icon: '',
+    stared: true,
+    front: true
   }
 ];
 

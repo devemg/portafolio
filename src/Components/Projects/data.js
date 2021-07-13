@@ -1,4 +1,3 @@
-// Gradients taken from: https://webgradients.com/
 const list =  [
   {
     id:'123',
@@ -12,6 +11,7 @@ const list =  [
     demoUrl: 'https://random-aq.herokuapp.com/',
     codeUrl:'https://github.com/devemg/randomAQ',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
+    image:'https://res.cloudinary.com/devemg/image/upload/v1626198513/my-portfolio/apps/proyecto2_q1dyot.svg',
     height: 400,
     background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)',
     color: '#C04848',
@@ -31,7 +31,7 @@ const list =  [
     codeUrl:'https://github.com/devemg/fast-msg-fe',
     height: 400,
     background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
-    color: 'rgba(238,155,0,1)',
+    color: 'rgb(242 168 168)',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg',
     image: 'https://res.cloudinary.com/devemg/image/upload/v1626196146/my-portfolio/apps/proyecto1_xpxbx7.svg',
     credentials: {

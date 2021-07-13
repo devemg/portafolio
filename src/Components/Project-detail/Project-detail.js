@@ -80,7 +80,7 @@ class ProjectDetail extends React.Component {
                    }
                     <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
                     <FontAwesomeIcon className="icon" icon='hand-point-right'/>
-                    Ver Demostración</a>
+                    Ver Demostración</a> <br/>
                     <a target="_blank" rel="noreferrer" href={codeUrl} style={{color}}>
                     <FontAwesomeIcon className="icon" icon='code'/>
                     Ver Código</a>

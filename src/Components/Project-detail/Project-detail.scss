@@ -1,7 +1,7 @@
 #project-detail {
     background: #1D1D1D;
     width: 100%;
-    height: 100%;
+    height: 50vh;
     z-index: 100;
     top: 0;
     left: 0;
@@ -15,27 +15,31 @@
         img {
             width: 15%;
         }
+        .close-btn {
+            background-color: transparent;
+            border: none;
+        }
+    
+        .close-btn:hover {
+            cursor: pointer;
+        }
     }
 
-    .close-btn {
-        background-color: transparent;
-        border: none;
-    }
 
-    .close-btn:hover {
-        cursor: pointer;
-    }
 
     .container {
         display: flex;
-        flex-direction: row;
+        height: 90vh;
+        overflow-y: auto;
+        margin: 0;
         width: 100%;
-        height: 100%;
-        
+
         .images-container {
-            width: 50%;
             display: flex;
-            padding: 15px;
+            width: 50%;
+            padding: 20px;
+            padding-top: 3em;
+
             img {
                 width: 100%;
             }
@@ -44,10 +48,9 @@
         .info {
             width: 50%;
             padding: 20px;
-            padding-top: 3em;
-            display: flex;
-            flex-direction: column;
-            
+            //display: flex;
+            //flex-direction: column;
+
             p {
                 text-align: justify;
             }
@@ -60,7 +63,6 @@
                 color: white !important;
             }
         }
-
     }
 
     .credentials {
@@ -80,42 +82,67 @@
 
 @media screen and (max-width:768px) {
     #project-detail {
-
         .title {
             img {
                 width: 30%;
             }
         }
-
+    
         .container {
             flex-direction: column;
 
-            .images-container {
-                width: 100%;
-            }
-
             .info {
                 width: 100%  !important;
-                padding-bottom: 2em;
+                padding-bottom: 1em;
 
                 h2 {
                     font-size: 35px;
                 }
             }
+
+            .images-container {
+                justify-content: flex-end;
+                width: 100%;
+                padding: 10px 1em 5em 20px;
+
+                img {
+                    width: 50%;
+                }
+            }
         }
     }
-  }
+}
 
+@media screen and (max-width:555px) {
+    #project-detail {
+        .container {
+            .images-container {
+                justify-content: center;
 
-  
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:426px) {
     #project-detail {
-
         .title {
+            padding-top: 5px;
+            padding-bottom: 5px;
             img {
                 width: 50%;
             }
         }
+    
+        .container .images-container {
+            padding: 15px 15px 25px 15px;
+
+            img {
+                width: 100%;
+            }
+        }   
     }
 }

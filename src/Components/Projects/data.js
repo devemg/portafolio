@@ -31,7 +31,7 @@ const list =  [
     codeUrl:'https://github.com/devemg/fast-msg-fe',
     height: 400,
     background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
-    color: 'rgb(242 168 168)',
+    color: 'rgba(238,155,0,1)',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg',
     image: 'https://res.cloudinary.com/devemg/image/upload/v1626196146/my-portfolio/apps/proyecto1_xpxbx7.svg',
     credentials: {

@@ -9,7 +9,15 @@ import ProjectDetail from '../Project-detail/Project-detail';
  */
 class Projects extends React.Component {
 
-  state  = {selected: data[0]};
+  state  = {selected: null};
+
+  showProject = (element)=>{
+    this.setState({selected:element});
+  }
+
+  hideProject = ()=>{
+    this.setState({selected:null})
+  }
 
   render() {
     return <section id="projects">
@@ -17,12 +25,17 @@ class Projects extends React.Component {
       <div className="grid" >
         {
           data.map(element=>{
-            return <div className="cell" key={element.id}  style={{'background':element.background}} >
+            return <div 
+            className="cell" 
+            key={element.id}  
+            style={{'background':element.background}}
+            onClick={()=>{this.showProject(element)}}
+            >
               <img className="logo" src={element.logo} alt={element.name} />
             </div>
           })
         }
-        {/**<ProjectDetail project={data[0]} /> */}
+        {this.state.selected?<ProjectDetail project={this.state.selected} onClose={this.hideProject} />:null}
       </div>
     </section>
   }

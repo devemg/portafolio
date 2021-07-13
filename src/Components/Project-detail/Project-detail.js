@@ -21,13 +21,17 @@ class ProjectDetail extends React.Component {
         </div>
     }
 
+    close = ()=>{
+        this.props.onClose();
+    }
+
     render() {
         const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color, image } = this.props.project; 
 
         return <section id="project-detail">
             <div className="title" style={{ background }}>
                 <img src={logo} alt={name} />
-                <button className="close-btn">
+                <button className="close-btn" onClick={this.close}>
                 <FontAwesomeIcon icon='times' color="white" />
                 </button>
             </div>

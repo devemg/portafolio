@@ -30,7 +30,12 @@ const list =  [
     codeUrl:'https://github.com/devemg/fast-msg-fe',
     height: 400,
     background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
-    logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg'
+    logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg',
+    credentials: {
+      user: 'invitado@fastmessages.com',
+      password:'fastmessages',
+      description:'Utiliza las siguientes credenciales para ingresar.'
+    }
   }
   ]
 ;

@@ -9,13 +9,15 @@ import ProjectDetail from '../Project-detail/Project-detail';
  */
 class Projects extends React.Component {
 
-  state  = {selected: null};
+  state  = {selected: data[0]};
 
   showProject = (element)=>{
+    document.body.classList.add('modal-open');
     this.setState({selected:element});
   }
 
   hideProject = ()=>{
+    document.body.classList.remove('modal-open');
     this.setState({selected:null})
   }
 

@@ -33,6 +33,14 @@
 
 }
 
+@media screen and (max-height:500px) {
+  #projects {
+      .grid {
+          height: 300px;
+      }
+  }
+}
+
 @media screen and (max-width:768px) {
   #projects {
       .grid {

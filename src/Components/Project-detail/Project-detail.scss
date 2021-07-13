@@ -7,6 +7,12 @@
     left: 0;
     position: fixed;
 
+    .animate__animated.animate__zoomOut,
+    .animate__animated.animate__zoomIn {
+        --animate-duration: 30ms;
+    }
+
+
     .title {
         padding: 1em;
         display: flex;

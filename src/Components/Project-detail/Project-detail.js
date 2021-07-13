@@ -18,7 +18,7 @@ class ProjectDetail extends React.Component {
         document.addEventListener("keydown", this.escFunction, false);
         setTimeout(() => {
             document.body.classList.add('modal-open');
-        }, 500);
+        }, 30);
     }
       
     componentWillUnmount(){
@@ -44,7 +44,7 @@ class ProjectDetail extends React.Component {
         document.body.classList.remove('modal-open');
         setTimeout(() => {
             this.props.onClose();
-        },1000);
+        },300);
     } 
 
     /**

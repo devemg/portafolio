@@ -31,17 +31,18 @@ class ProjectDetail extends React.Component {
      */
     getCarousel(images){
         var settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             vertical: true,
             verticalSwiping: true,
+            
           };
           
-        return <div className="images">
-        <Slider {...settings}>
+        return <div className="images-container">
+        <Slider style={{width:'100%'}} {...settings}>
             {
                 images.map(element=>{
                     return <img key={element.id} src={element.url} alt="" />

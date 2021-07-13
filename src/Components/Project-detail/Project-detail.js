@@ -8,6 +8,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  */
 class ProjectDetail extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.escFunction = this.escFunction.bind(this);
+    }
+
+    componentDidMount(){
+        document.addEventListener("keydown", this.escFunction, false);
+    }
+      
+    componentWillUnmount(){
+        document.removeEventListener("keydown", this.escFunction, false);
+    }
+
+    /**
+     * Catch esc key
+     * @param {*} event 
+     */
+    escFunction(event){
+        if(event.keyCode === 27) {
+          //close if is scape 
+          this.close();
+        }
+    }
+
+    /**
+     * Close modal
+     */
+     close = ()=>{
+        this.props.onClose();
+    }
+
     /**
      * Get Credentials div
      * @param {*} credentials 
@@ -21,9 +52,6 @@ class ProjectDetail extends React.Component {
         </div>
     }
 
-    close = ()=>{
-        this.props.onClose();
-    }
 
     render() {
         const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color, image } = this.props.project; 
@@ -37,7 +65,6 @@ class ProjectDetail extends React.Component {
             </div>
             <div className="container">
                 <div className="info" style={{width:image?'50%':'100%'}}>
-                    <h2>{name}</h2>
                     <p>{description}</p>
                     <p>{demoDescription}</p>
                    {

@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return <div> 
         <div id="footer">
             <div className="footer-left">
-        dfwef
+            
             </div>
             <div className="footer-right">
                 <h3>Contacta conmigo</h3>

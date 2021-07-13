@@ -14,6 +14,7 @@ const list =  [
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
     height: 400,
     background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)',
+    color: '#C04848',
     credentials: {
       user: 'invitado@invitado.com',
       password:'invitado',
@@ -30,6 +31,7 @@ const list =  [
     codeUrl:'https://github.com/devemg/fast-msg-fe',
     height: 400,
     background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
+    color: 'rgba(238,155,0,1)',
     logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg',
     credentials: {
       user: 'invitado@fastmessages.com',

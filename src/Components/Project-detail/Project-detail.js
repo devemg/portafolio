@@ -17,9 +17,9 @@ class ProjectDetail extends React.Component {
     }
 
     render() {
-        const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials } = this.props.project; 
+        const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color } = this.props.project; 
         return <section id="project-detail">
-            <div className="title" style={{'background': background }}>
+            <div className="title" style={{ background }}>
                 <img src={logo} alt={name} />
                 <button className="close-btn">
                 <FontAwesomeIcon icon='times' color="white" />
@@ -36,11 +36,11 @@ class ProjectDetail extends React.Component {
                    {
                        credentials? this.getCredentials(credentials):''
                    }
-                    <a target="_blank" rel="noreferrer" href={demoUrl}>
-                    <FontAwesomeIcon className="icon" icon='times'/>
+                    <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
+                    <FontAwesomeIcon className="icon" icon='hand-point-right'/>
                     Ver Demostración</a>
-                    <a target="_blank" rel="noreferrer" href={codeUrl}>
-                    <FontAwesomeIcon className="icon" icon='times'/>
+                    <a target="_blank" rel="noreferrer" href={codeUrl} style={{color}}>
+                    <FontAwesomeIcon className="icon" icon='code'/>
                     Ver Código</a>
                 </div>
             </div>

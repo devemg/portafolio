@@ -1,14 +1,16 @@
 import './App.scss';
+// components 
 import Footer from './Components/Footer/Footer';
 import Start from './Components/Start/Start';
 import Message from './Components/Message/Message'
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+
+// Font Awesome 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGitlab, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-// add font awesome icons
-library.add(fab, faGitlab,faGithub, faTimes);
+import { faTimes, faCode, faHandPointRight } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faGitlab,faGithub, faTimes, faCode, faHandPointRight);
 
 const contact = [
   {

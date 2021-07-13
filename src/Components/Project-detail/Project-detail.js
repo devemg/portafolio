@@ -16,6 +16,9 @@ class ProjectDetail extends React.Component {
 
     componentDidMount(){
         document.addEventListener("keydown", this.escFunction, false);
+        setTimeout(() => {
+            document.body.classList.add('modal-open');
+        }, 500);
     }
       
     componentWillUnmount(){
@@ -37,11 +40,12 @@ class ProjectDetail extends React.Component {
      * Close modal
      */
      close = ()=>{
-        this.modalRef.current.classList.add('animate__slideOutUp')
+        this.modalRef.current.classList.add('animate__zoomOut')
+        document.body.classList.remove('modal-open');
         setTimeout(() => {
             this.props.onClose();
-        }, 1000);
-    }
+        },1000);
+    } 
 
     /**
      * Get Credentials div
@@ -60,7 +64,7 @@ class ProjectDetail extends React.Component {
     render() {
         const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color, image } = this.props.project; 
 
-        return <section id="project-detail" className="animate__animated animate__slideInDown" ref={this.modalRef} >
+        return <section id="project-detail" className="animate__animated animate__zoomIn" ref={this.modalRef} >
             <div className="title" style={{ background }}>
                 <img src={logo} alt={name} />
                 <button className="close-btn" onClick={this.close}>
@@ -68,7 +72,7 @@ class ProjectDetail extends React.Component {
                 </button>
             </div>
             <div className="container">
-                <div className="info" style={{width:image?'50%':'100%'}}>
+                <div className="info">
                     <p>{description}</p>
                     <p>{demoDescription}</p>
                    {

@@ -11,6 +11,7 @@ class ProjectDetail extends React.Component {
     constructor(props){
         super(props);
         this.escFunction = this.escFunction.bind(this);
+        this.modalRef = React.createRef();
     }
 
     componentDidMount(){
@@ -36,7 +37,10 @@ class ProjectDetail extends React.Component {
      * Close modal
      */
      close = ()=>{
-        this.props.onClose();
+        this.modalRef.current.classList.add('animate__slideOutUp')
+        setTimeout(() => {
+            this.props.onClose();
+        }, 1000);
     }
 
     /**
@@ -56,7 +60,7 @@ class ProjectDetail extends React.Component {
     render() {
         const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color, image } = this.props.project; 
 
-        return <section id="project-detail">
+        return <section id="project-detail" className="animate__animated animate__slideInDown" ref={this.modalRef} >
             <div className="title" style={{ background }}>
                 <img src={logo} alt={name} />
                 <button className="close-btn" onClick={this.close}>

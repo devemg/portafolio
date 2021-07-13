@@ -1,6 +1,5 @@
 import React from 'react'
 import data from './data'
-import { Grid } from 'mauerwerk'
 import './Projects.scss';
 
 /**
@@ -11,30 +10,15 @@ class Projects extends React.Component {
   render() {
     return <section id="projects">
       <h1>Mis Proyectos</h1>
-      <Grid
-      className="grid"
-      data={data}
-      keys={d => d.name}
-      heights={d => d.height}
-      columns={2}>
-      {(data, maximized, toggle) => (
-        <div
-          className="cell"
-          style={{ backgroundImage: data.background }}
-          onClick={toggle}>
-          {maximized && (
-            <div className="details">
-              <h1>{data.name}</h1>
-              <p>{data.description}</p>
+      <div className="grid" >
+        {
+          data.map(element=>{
+            return <div className="cell" key={element.id}  style={{'background':element.background}} >
+              <img className="logo" src={element.logo} alt={element.name} />
             </div>
-          )}
-          {!maximized && <div className="default">
-           {/* portrait*/}
-           <img className="logo" src={data.logo} alt={data.name}/>
-            </div>}
-        </div>
-      )}
-    </Grid>
+          })
+        }
+      </div>
     </section>
   }
 }

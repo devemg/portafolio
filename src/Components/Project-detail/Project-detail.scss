@@ -34,6 +34,10 @@
 
         .images {
             width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            padding-top: 5em;
         }
 
         .info {

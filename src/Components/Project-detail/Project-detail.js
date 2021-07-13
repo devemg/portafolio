@@ -1,6 +1,10 @@
 import React from 'react';
 import './Project-detail.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 /**
  * 1st Section
@@ -8,6 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  */
 class ProjectDetail extends React.Component {
 
+    /**
+     * Get Credentials div
+     * @param {*} credentials 
+     * @returns 
+     */
     getCredentials(credentials){
         return <div className="credentials">
             <p>{credentials.description}</p>
@@ -16,8 +25,35 @@ class ProjectDetail extends React.Component {
         </div>
     }
 
+    /**
+     * Get carousel of images
+     * @param {*} images 
+     */
+    getCarousel(images){
+        var settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            vertical: true,
+            verticalSwiping: true,
+          };
+          
+        return <div className="images">
+        <Slider {...settings}>
+            {
+                images.map(element=>{
+                    return <img key={element.id} src={element.url} alt="" />
+                })
+            }
+        </Slider>
+        </div>
+    }
+
     render() {
-        const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color } = this.props.project; 
+        const { logo, name, background, description, demoDescription, demoUrl, codeUrl, credentials, color, images } = this.props.project; 
+
         return <section id="project-detail">
             <div className="title" style={{ background }}>
                 <img src={logo} alt={name} />
@@ -26,10 +62,8 @@ class ProjectDetail extends React.Component {
                 </button>
             </div>
             <div className="container">
-                <div className="images">
-
-                </div>
-                <div className="info">
+                {images?this.getCarousel(images):''}
+                <div className="info" style={{width:images?'50%':'100%'}}>
                     <h2>{name}</h2>
                     <p>{description}</p>
                     <p>{demoDescription}</p>

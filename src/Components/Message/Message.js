@@ -1,6 +1,8 @@
 import React from 'react';
 import './Message.scss';
 import arrowImage from '../../assets/down-arrow-white.svg';
+import Particles from "react-tsparticles";
+import particlesConfig from './config-particles';
 
 /**
  * 2nd Section
@@ -9,10 +11,14 @@ import arrowImage from '../../assets/down-arrow-white.svg';
 class Message extends React.Component {
 
 
+
     render() {
         return <section id="message" >
-        <div id="canvas-particles" className="canvas-particles">
-        </div>
+        <Particles
+        id="tsparticles"
+        className="canvas-particles"
+        options={particlesConfig}
+      /> 
         <div className="message-container">
                 <p className="message">{this.props.message}</p>
                 <a href="#skills" className="image-arrow">

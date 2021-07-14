@@ -81,6 +81,11 @@
 
 @media screen and (max-width:768px) {
     #skills {
+
+        .image-arrow{
+            display: none;
+        }
+
         .grid {
             grid-template-columns: repeat(2,1fr);
             padding: 0 15px 0 15px;

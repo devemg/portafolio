@@ -50,8 +50,8 @@ class App extends React.Component {
         animation={'fade-right'}
         animationDuration={'1000'}
          />
-        <Projects data={projects} animationDuration={'1000'} />
-        <Footer accounts= {contact} accountAnimation={'fade-up'} animationDuration={'1000'} />
+          <Projects data={projects} animationDuration={'1000'} />
+          <Footer accounts= {contact} accountAnimation={'fade-up'} animationDuration={'1000'} />
       </div>
     );
   }

@@ -7,6 +7,12 @@
     justify-content: flex-end;
     align-items: center;
 
+    /* Create the parallax scrolling effect */
+   /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
     h1 {
         font-size: 50px;
         color: #1D1D1D;
@@ -26,3 +32,12 @@
         padding: 50px 10px 50px 15px;
     }
 }
+
+/*
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+*/

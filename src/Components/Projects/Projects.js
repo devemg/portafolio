@@ -1,5 +1,4 @@
 import React from 'react'
-import data from './data'
 import './Projects.scss';
 import ProjectDetail from '../Project-detail/Project-detail';
 
@@ -9,7 +8,7 @@ import ProjectDetail from '../Project-detail/Project-detail';
  */
 class Projects extends React.Component {
 
-  state  = {selected: null };
+  state  = { selected: null };
 
   showProject = (element)=>{
     document.body.classList.add('modal-open');
@@ -26,7 +25,7 @@ class Projects extends React.Component {
       <h1>Mis Proyectos</h1>
       <div className="grid" >
         {
-          data.map(element=>{
+          this.props.data.map(element=>{
             return <div 
             className="cell" 
             key={element.id}  

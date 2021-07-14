@@ -6,7 +6,7 @@ class Footer extends React.Component {
 
     render() {
         return <div> 
-        <div id="footer">
+        <div id="footer" data-aos={this.props.accountAnimation} data-aos-duration={this.props.animationDuration}>
             <div className="footer-left">
             
             </div>
@@ -16,6 +16,7 @@ class Footer extends React.Component {
                 this.props.accounts.map(element=>{
                     return <a 
                     href={element.url} 
+                    
                     target="_blank" 
                     rel="noreferrer" 
                     className="item" 

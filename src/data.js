@@ -215,7 +215,8 @@ const data = {
             user: 'invitado@invitado.com',
             password:'invitado',
             description:'Utiliza las siguientes credenciales para ingresar.'
-          }
+          },
+          animation: 'fade-right'
         },
         {
           id:'456',
@@ -235,7 +236,7 @@ const data = {
             password:'fastmessages',
             description:'Utiliza las siguientes credenciales para ingresar.'
           },
-          
+          animation: 'fade-left'
         }
     ]
 }

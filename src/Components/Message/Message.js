@@ -9,7 +9,7 @@ import './Message.scss';
 class Message extends React.Component {
 
     render() {
-        return <section id="message" data-aos="fade-up">
+        return <section id="message" data-aos={this.props.animation} data-aos-duration={this.props.animationDuration}>
         <div className="container-message">
             <div className="message" >
             <p >{this.props.message}</p>

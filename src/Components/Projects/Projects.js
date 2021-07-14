@@ -28,6 +28,8 @@ class Projects extends React.Component {
           this.props.data.map(element=>{
             return <div 
             className="cell" 
+            data-aos={element.animation}
+            data-aos-duration={this.props.animationDuration}
             key={element.id}  
             style={{'background':element.background}}
             onClick={()=>{this.showProject(element)}}

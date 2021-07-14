@@ -37,8 +37,8 @@ class App extends React.Component {
 
     return (
       <div>
-        <Start />
-        <Message message={message} />
+        <Start animation={"zoom-in"}  animationDuration={'1000'} />
+        <Message message={message} animation={"fade-up"} animationDuration={'1000'} />
         <Skills 
         languages = {languages}
         frameworks = {frameworks}
@@ -46,9 +46,11 @@ class App extends React.Component {
         devops = {devops}
         databases = {databases}
         tools = {tools}
+        animation={'fade-right'}
+        animationDuration={'1000'}
          />
-        <Projects data={projects} />
-        <Footer accounts= {contact} />
+        <Projects data={projects} animationDuration={'1000'} />
+        <Footer accounts= {contact} accountAnimation={'fade-up'} animationDuration={'1000'} />
       </div>
     );
   }

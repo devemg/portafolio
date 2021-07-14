@@ -1,4 +1,7 @@
+import React from 'react';
 import './App.scss';
+import * as AOS from 'aos';
+import "aos/dist/aos.css";
 // components 
 import Footer from './Components/Footer/Footer';
 import Start from './Components/Start/Start';
@@ -6,7 +9,6 @@ import Message from './Components/Message/Message'
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import data from './data';
-
 // Font Awesome 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGitlab, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -24,24 +26,32 @@ forma más eficiente posible.`;
  * Principal component
  * @returns 
  */
-function App() {
-  const { languages, frameworks, cloud, devops, databases,tools,projects,contact } = data;
-  return (
-    <div>
-      <Start />
-      <Message message={message} />
-      <Skills 
-      languages = {languages}
-      frameworks = {frameworks}
-      cloud = {cloud}
-      devops = {devops}
-      databases = {databases}
-      tools = {tools}
-       />
-      <Projects data={projects} />
-      <Footer accounts= {contact} />
-    </div>
-  );
+class App extends React.Component {
+ 
+  componentDidMount() {
+    AOS.init();
+  }
+
+  render(){
+    const { languages, frameworks, cloud, devops, databases,tools,projects,contact } = data;
+
+    return (
+      <div>
+        <Start />
+        <Message message={message} />
+        <Skills 
+        languages = {languages}
+        frameworks = {frameworks}
+        cloud = {cloud}
+        devops = {devops}
+        databases = {databases}
+        tools = {tools}
+         />
+        <Projects data={projects} />
+        <Footer accounts= {contact} />
+      </div>
+    );
+  }
 }
 
 export default App;

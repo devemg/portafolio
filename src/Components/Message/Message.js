@@ -9,10 +9,10 @@ import './Message.scss';
 class Message extends React.Component {
 
     render() {
-        return <section id="message">
+        return <section id="message" data-aos="fade-up">
         <div className="container-message">
-            <div className="message">
-            <p>{this.props.message}</p>
+            <div className="message" >
+            <p >{this.props.message}</p>
             </div>
         <div className="signature">
             {/*<h3>- Emely</h3> */}

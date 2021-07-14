@@ -54,7 +54,7 @@ class Skills extends React.Component {
 
                 {
                     themes.map(element=>{
-                        return <div className="item-grid" data-aos={this.props.animation} data-aos-duration={this.props.animationDuration}>
+                        return <div key={element.word} className="item-grid" data-aos={this.props.animation} data-aos-duration={this.props.animationDuration}>
                         <div className="front">
                             <h2>{element.title}</h2>
                             <img src={element.image} alt={element.alt} />

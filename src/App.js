@@ -12,8 +12,9 @@ import data from './data';
 // Font Awesome 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGitlab, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faTimes, faCode, faHandPointRight } from '@fortawesome/free-solid-svg-icons';
-library.add(fab, faGitlab,faGithub, faTimes, faCode, faHandPointRight);
+import { faTimes, faCode, faHandPointRight, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faGitlab,faGithub, faTimes, faCode, faHandPointRight, faFileAlt);
 
 
 const message = `Soy una desarrolladora de software dedicada y entusiasta.He desarrollado 

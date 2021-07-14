@@ -8,40 +8,45 @@ footer {
 
 #footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #161616;
 
-    .footer-left {
-        width: 50%;
+    h3 {
+        font-size: 1.92em;
+        width: 100%;
+        text-align: center;
     }
-    
+
     .footer-right {
-        width: 30%;
+        width: 100%;
         padding: 1em;
-
-        h3 {
-            font-size: 1.92em;
-            width: 100%;
-            text-align: left;
-        }
-
+        display: flex; 
+        justify-content: space-evenly;
         .item {
             padding-top: 10px;
             padding-bottom: 10px;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             color: white;
-            p {
+            flex: 1;
+            .info {
                 margin: 0;
-                padding: 0 0 0 1em;
+                animation: backOutDown;
+                animation-duration: 600ms;
+                visibility: hidden;
             }
+
         }
 
-        .item:hover {
-            font-weight: bold;
+        .item:hover .info{
+            visibility: visible !important;
+            animation: bounceInUp;
+            animation-duration: 600ms;
         }
 
     }

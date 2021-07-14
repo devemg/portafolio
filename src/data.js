@@ -3,30 +3,37 @@ const data = {
         {
           name: 'LinkedIn',
           url: 'https://linkedin.com/in/emely-garciam',
-          icon: 'linkedin',
+          icon: ['fab','linkedin'],
           user: 'Emely García',
           color: '#0e76a8'
         },
         {
           name: 'Gmail',
           url: 'mailto:garciam.emm@gmail.com',
-          icon: 'google',
+          icon: ['fab','google'],
           user: 'garciam.emm@gmail.com',
           color: '#ea4335'
         },
         {
           name: 'Github',
           url: 'https://github.com/devemg',
-          icon: 'github',
+          icon: ['fab','github'],
           user: 'devemg',
           color: '#FFFF'
         },
         {
           name: 'Gitlab',
           url: 'https://gitlab.com/devemg',
-          icon: 'gitlab',
+          icon: ['fab','gitlab'],
           user: 'devemg',
           color: '#fc6d26'
+        },
+        {
+          name: 'Hoja de Vida',
+          url: 'https://drive.google.com/file/d/1U4HcwL_xmoxDnW7cgXlyE3elQW8hqxD5/view?usp=sharing',
+          user: 'Hoja de Vida',
+          icon: ['fas','file-alt'],
+          color: '#dfdedc'
         }
     ],
     languages: [

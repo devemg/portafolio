@@ -7,3 +7,16 @@ section {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+.image-arrow {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    img {
+        width: 30px;
+    }
+}
+
+.flex-right {
+    justify-content: flex-end;
+}

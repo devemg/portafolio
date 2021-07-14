@@ -1,5 +1,6 @@
 import React from 'react';
 import './Start.scss';
+import arrowImage from '../../assets/down-arrow.svg';
 
 
 /**
@@ -14,6 +15,9 @@ class Start extends React.Component {
             <h1>Hello!</h1>
             <h1>I’m Emely Garcia</h1>
             <h1>Web Developer</h1>
+            <a href="#message" className="image-arrow">
+                <img src={arrowImage} alt="arrow"/>
+            </a>
         </div>
         </section>
     }

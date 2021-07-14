@@ -1,42 +1,49 @@
 import React from 'react';
 import './Skills.scss';
+import arrowImage from '../../assets/down-arrow-white.svg';
 
 const themes = [
     {
         title: 'Lenguajes de Programación',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131123/my-portfolio/software-development_1_beajtn.svg',
         alt: 'lenguajes',
-        word: 'languages'
+        word: 'languages',
+        animation: 'fade-right'
     },
     {
         title: 'FrameWorks y librerías',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_1_kmfoqy.svg',
         alt: '',
-        word: 'frameworks'
+        word: 'frameworks',
+        animation: 'fade-right'
     },
     {
         title: 'Cloud',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_lwpqdi.svg',
         alt: 'cloud',
-        word: 'cloud'
+        word: 'cloud',
+        animation: 'fade-right'
     },
     {
         title: 'Bases de Datos',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131868/my-portfolio/database-storage_1_oeookf.svg',
         alt: 'databases',
-        word: 'databases'
+        word: 'databases',
+        animation: 'fade-left'
     },
     {
         title: 'DevOps',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626130396/my-portfolio/eternity_1_1_h0og5s.svg',
         alt: 'devops',
-        word: 'devops'
+        word: 'devops',
+        animation: 'fade-left'
     },
     {
         title: 'IDEs y herramientas',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131583/my-portfolio/repair_1_1_umg055.svg',
         alt: 'tools',
-        word: 'tools'
+        word: 'tools',
+        animation: 'fade-left'
     }
 ];
 
@@ -54,7 +61,7 @@ class Skills extends React.Component {
 
                 {
                     themes.map(element=>{
-                        return <div key={element.word} className="item-grid" data-aos={this.props.animation} data-aos-duration={this.props.animationDuration}>
+                        return <div key={element.word} className="item-grid" data-aos={element.animation} data-aos-duration={this.props.animationDuration}>
                         <div className="front">
                             <h2>{element.title}</h2>
                             <img src={element.image} alt={element.alt} />
@@ -71,6 +78,9 @@ class Skills extends React.Component {
                     })
                 }
             </div>
+            <a href="#projects" className="image-arrow">
+                <img src={arrowImage} alt="arrow"/>
+            </a>
         </section>
     }
 }

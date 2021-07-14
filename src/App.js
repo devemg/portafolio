@@ -47,7 +47,6 @@ class App extends React.Component {
         devops = {devops}
         databases = {databases}
         tools = {tools}
-        animation={'fade-right'}
         animationDuration={'1000'}
          />
           <Projects data={projects} animationDuration={'1000'} />

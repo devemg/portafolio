@@ -1,5 +1,5 @@
 {
-  "homepage": "http://devemg.github.io/my-portfolio",
+  "homepage": "http://devemg.com",
   "name": "my-page",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +16,7 @@
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "4.0.3",
     "react-tsparticles": "^1.31.2",
     "tsparticles": "^1.31.1",
     "web-vitals": "^1.1.2"

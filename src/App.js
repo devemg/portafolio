@@ -17,9 +17,9 @@ import { faTimes, faCode, faHandPointRight, faFileAlt } from '@fortawesome/free-
 library.add(fab, faGitlab,faGithub, faTimes, faCode, faHandPointRight, faFileAlt);
 
 
-const message = `Soy una desarrolladora de software dedicada y entusiasta.He desarrollado 
-software desde hace más de cuatro años tanto para el área academica como colaboradora en proyectos independientes.
-Soy curiosa y acostumbrada a aprender para enfrentarme a cualquier reto, siempre buscando hacer mi trabajo de la 
+const message = `Soy una desarrolladora de software dedicada y entusiasta. He desarrollado 
+software desde hace más de cuatro años para el área académica y desde hace uno en el área profesional.
+Soy curiosa y autodidacta. En constante aprendizaje y preparandome para enfrentar cualquier reto y buscando hacer mi trabajo de la 
 forma más eficiente posible.`;
 
 

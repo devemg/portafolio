@@ -1,6 +1,6 @@
-const particlesConfig =
-{
+const particlesConfig = {
   "autoPlay": true,
+
   "backgroundMask": {
     "composite": "destination-out",
     "cover": {
@@ -21,8 +21,8 @@ const particlesConfig =
     "detectsOn": "canvas",
     "events": {
       "onClick": {
-        "enable": true,
-        "mode": "repulse"
+        "enable": false,
+        "mode": []
       },
       "onDiv": {
         "selectors": [],
@@ -31,8 +31,8 @@ const particlesConfig =
         "type": "circle"
       },
       "onHover": {
-        "enable": true,
-        "mode": "bubble",
+        "enable": false,
+        "mode": [],
         "parallax": {
           "enable": false,
           "force": 2,
@@ -54,10 +54,8 @@ const particlesConfig =
         "distance": 200
       },
       "bubble": {
-        "distance": 250,
-        "duration": 2,
-        "opacity": 0,
-        "size": 0
+        "distance": 200,
+        "duration": 0.4
       },
       "connect": {
         "distance": 80,
@@ -67,7 +65,7 @@ const particlesConfig =
         "radius": 60
       },
       "grab": {
-        "distance": 400,
+        "distance": 100,
         "links": {
           "blink": false,
           "consent": false,
@@ -102,7 +100,7 @@ const particlesConfig =
         "quantity": 2
       },
       "repulse": {
-        "distance": 400,
+        "distance": 200,
         "duration": 0.4,
         "factor": 100,
         "speed": 1,
@@ -170,7 +168,7 @@ const particlesConfig =
       }
     },
     "color": {
-      "value": "#ffffff",
+      "value": "#fff",
       "animation": {
         "h": {
           "count": 0,
@@ -242,13 +240,13 @@ const particlesConfig =
     "links": {
       "blink": false,
       "color": {
-        "value": "#ffffff"
+        "value": "#fff"
       },
       "consent": false,
-      "distance": 150,
-      "enable": false,
+      "distance": 100,
+      "enable": true,
       "frequency": 1,
-      "opacity": 0.4,
+      "opacity": 1,
       "shadow": {
         "blur": 5,
         "color": {
@@ -272,8 +270,8 @@ const particlesConfig =
         "distance": 200,
         "enable": false,
         "rotate": {
-          "x": 600,
-          "y": 600
+          "x": 3000,
+          "y": 3000
         }
       },
       "decay": 0,
@@ -299,15 +297,11 @@ const particlesConfig =
         "enable": false
       },
       "outModes": {
-        "default": "out",
-        "bottom": "out",
-        "left": "out",
-        "right": "out",
-        "top": "out"
+        "default": "out"
       },
-      "random": true,
+      "random": false,
       "size": false,
-      "speed": 1,
+      "speed": 2,
       "straight": false,
       "trail": {
         "enable": false,
@@ -321,26 +315,23 @@ const particlesConfig =
     },
     "number": {
       "density": {
-        "enable": true,
+        "enable": false,
         "area": 800,
         "factor": 1000
       },
       "limit": 0,
-      "value": 160
+      "value": 100
     },
     "opacity": {
       "random": {
         "enable": true,
         "minimumValue": 0.1
       },
-      "value": {
-        "min": 0,
-        "max": 1
-      },
+      "value": 1,
       "animation": {
         "count": 0,
-        "enable": true,
-        "speed": 1,
+        "enable": false,
+        "speed": 2,
         "sync": false,
         "destroy": "none",
         "minimumValue": 0,
@@ -391,25 +382,22 @@ const particlesConfig =
     },
     "size": {
       "random": {
-        "enable": true,
+        "enable": false,
         "minimumValue": 1
       },
-      "value": {
-        "min": 1,
-        "max": 3
-      },
+      "value": 0,
       "animation": {
         "count": 0,
         "enable": false,
-        "speed": 4,
+        "speed": 5,
         "sync": false,
         "destroy": "none",
-        "minimumValue": 0.3,
+        "minimumValue": 0,
         "startValue": "random"
       }
     },
     "stroke": {
-      "width": 0
+      "width": 2
     },
     "tilt": {
       "random": {
@@ -457,6 +445,6 @@ const particlesConfig =
   "pauseOnOutsideViewport": true,
   "responsive": [],
   "themes": []
-};
+}
 
 export default particlesConfig;

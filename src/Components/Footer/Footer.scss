@@ -36,8 +36,6 @@ footer {
             flex: 1;
             .info {
                 margin: 0;
-                animation: backOutDown;
-                animation-duration: 600ms;
                 visibility: hidden;
             }
 
@@ -45,7 +43,7 @@ footer {
 
         .item:hover .info{
             visibility: visible !important;
-            animation: bounceInUp;
+            animation: slideInUp;
             animation-duration: 600ms;
         }
 

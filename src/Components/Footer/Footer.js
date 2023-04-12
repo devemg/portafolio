@@ -8,7 +8,7 @@ class Footer extends React.Component {
     render() {
         return <div> 
         <div id="footer" data-aos={this.props.accountAnimation} data-aos-duration={this.props.animationDuration}>
-        <h3>Contacta conmigo</h3>
+        <h3>Contact with me </h3>
             <div className="footer-right">
             {
                 this.props.accounts.map(element=>{

@@ -205,12 +205,12 @@ const data = {
         {
           id:'123',
           name: 'RandomAQ',
-          description: `RandomAQ es una applicación de preguntas y respuestas. 
-          Está compuesta por dos aplicaciones: 
-          Un panel de administración, desarrollado en Angular, en donde se ingresan las categorías, preguntas y respuestas.
-          Y, una aplicación móvil, desarrollada en Ionic, en donde se elige una categoría y se genera una pregunta aleatoria con un 
-          temporizador de 30 segundos para contestar la pregunta.`,
-          demoDescription: 'A continuación se encuentra el enlace para acceder al panel de administración. ',
+          description: `RandomAQ is a question and answer application. 
+          It is composed of two applications: 
+          An administration panel, developed in Angular, where categories, questions and answers are entered.
+          And, a mobile application, developed in Ionic, where you choose a category and a random question is generated with a 30 seconds timer to answer the question. 
+          timer of 30 seconds to answer the question.`,
+          demoDescription: 'Below is the link to access the administration panel. ',
           demoUrl: 'https://random-aq.herokuapp.com/',
           codeUrl:'https://github.com/devemg/randomAQ',
           logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
@@ -221,15 +221,15 @@ const data = {
           credentials: {
             user: 'invitado@invitado.com',
             password:'invitado',
-            description:'Utiliza las siguientes credenciales para ingresar.'
+            description:'Use the following credentials to log in.'
           },
           animation: 'fade-right'
         },
         {
           id:'456',
           name: 'FastMessages',
-          description: `FastMessages es una aplicación de mensajería, desarrollada con el stack MEAN y socket.io. Permite la creación de cuentas,
-          inicio de sesión, agregar o eliminar contactos y mensajería instantánea. `,
+          description: `FastMessages is a messaging application, developed with the MEAN stack and socket.io. It allows the creation of accounts,
+          login, adding or deleting contacts and instant messaging. `,
           demoDescription: 'A continuación se encuentra una demostración del frontend con data generada de forma aletoria.',
           demoUrl: 'https://devemg.github.io/fast-msg-fe/',
           codeUrl:'https://github.com/devemg/fast-msg-fe',
@@ -241,7 +241,7 @@ const data = {
           credentials: {
             user: 'invitado@fastmessages.com',
             password:'fastmessages',
-            description:'Utiliza las siguientes credenciales para ingresar.'
+            description:'Use the following credentials to log in.'
           },
           animation: 'fade-left'
         }

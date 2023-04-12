@@ -17,10 +17,10 @@ import { faTimes, faCode, faHandPointRight, faFileAlt } from '@fortawesome/free-
 library.add(fab, faGitlab,faGithub, faTimes, faCode, faHandPointRight, faFileAlt);
 
 
-const message = `Soy una desarrolladora de software dedicada y entusiasta. He desarrollado 
-software desde hace más de cuatro años para el área académica y desde hace uno en el área profesional.
-Soy curiosa y autodidacta. En constante aprendizaje y preparandome para enfrentar cualquier reto y buscando hacer mi trabajo de la 
-forma más eficiente posible.`;
+const message = `I am a dedicated and enthusiastic software developer. I have been developing 
+software for more than four years for the academic area and since one year ago in the professional area.
+I am curious and self-taught. Constantly learning and preparing myself to face any challenge and looking to do my job as efficiently as possible. 
+most efficient way possible.`;
 
 
 /**

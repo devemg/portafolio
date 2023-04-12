@@ -22,7 +22,7 @@ class Projects extends React.Component {
 
   render() {
     return <section id="projects">
-      <h1>Mis Proyectos</h1>
+      <h1>My Projects</h1>
       <div className="grid" >
         {
           this.props.data.map(element=>{

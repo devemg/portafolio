@@ -55,8 +55,8 @@ class ProjectDetail extends React.Component {
     getCredentials(credentials){
         return <div className="credentials">
             <p>{credentials.description}</p>
-            <p>Usuario: <strong>{credentials.user}</strong></p>
-            <p>Contraseña: <strong>{credentials.password}</strong></p>
+            <p>User: <strong>{credentials.user}</strong></p>
+            <p>Password: <strong>{credentials.password}</strong></p>
         </div>
     }
 
@@ -78,12 +78,12 @@ class ProjectDetail extends React.Component {
                    {
                        credentials? this.getCredentials(credentials):''
                    }
-                    <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
+                    {/* <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
                     <FontAwesomeIcon className="icon" icon='hand-point-right'/>
-                    Ver Demostración</a> <br/>
+                    Demo</a> <br/> */}
                     <a target="_blank" rel="noreferrer" href={codeUrl} style={{color}}>
                     <FontAwesomeIcon className="icon" icon='code'/>
-                    Ver Código</a>
+                    Code </a>
                 </div>
                 <div className="images-container">
                     <img src={image} alt={name} />

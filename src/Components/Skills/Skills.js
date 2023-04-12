@@ -4,14 +4,14 @@ import arrowImage from '../../assets/down-arrow-white.svg';
 
 const themes = [
     {
-        title: 'Lenguajes de Programación',
+        title: 'Programming Languages',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131123/my-portfolio/software-development_1_beajtn.svg',
         alt: 'lenguajes',
         word: 'languages',
         animation: 'fade-right'
     },
     {
-        title: 'FrameWorks y librerías',
+        title: 'FrameWorks and librearies',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626129832/my-portfolio/Group_1_kmfoqy.svg',
         alt: '',
         word: 'frameworks',
@@ -25,7 +25,7 @@ const themes = [
         animation: 'fade-right'
     },
     {
-        title: 'Bases de Datos',
+        title: 'Databases',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131868/my-portfolio/database-storage_1_oeookf.svg',
         alt: 'databases',
         word: 'databases',
@@ -39,7 +39,7 @@ const themes = [
         animation: 'fade-left'
     },
     {
-        title: 'IDEs y herramientas',
+        title: 'IDEs and tools',
         image: 'https://res.cloudinary.com/devemg/image/upload/v1626131583/my-portfolio/repair_1_1_umg055.svg',
         alt: 'tools',
         word: 'tools',
@@ -56,7 +56,7 @@ class Skills extends React.Component {
     
     render() {
         return <section id="skills">
-            <h1 className="title">Mis Habilidades</h1>
+            <h1 className="title">My Skills</h1>
             <div className="grid">
 
                 {

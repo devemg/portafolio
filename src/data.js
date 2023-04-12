@@ -28,13 +28,13 @@ const data = {
           user: 'devemg',
           color: '#fc6d26'
         },
-        {
-          name: 'Hoja de Vida',
-          url: 'https://drive.google.com/file/d/1U4HcwL_xmoxDnW7cgXlyE3elQW8hqxD5/view?usp=sharing',
-          user: 'Hoja de Vida',
-          icon: ['fas','file-alt'],
-          color: '#dfdedc'
-        }
+        // {
+        //   name: 'Hoja de Vida',
+        //   url: 'https://drive.google.com/file/d/1U4HcwL_xmoxDnW7cgXlyE3elQW8hqxD5/view?usp=sharing',
+        //   user: 'Hoja de Vida',
+        //   icon: ['fas','file-alt'],
+        //   color: '#dfdedc'
+        // }
     ],
     languages: [
         {

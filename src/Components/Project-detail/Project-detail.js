@@ -78,9 +78,12 @@ class ProjectDetail extends React.Component {
                    {
                        credentials? this.getCredentials(credentials):''
                    }
-                    {/* <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
-                    <FontAwesomeIcon className="icon" icon='hand-point-right'/>
-                    Demo</a> <br/> */}
+                    {
+                        demoUrl && <a target="_blank" rel="noreferrer" href={demoUrl} style={{color}} >
+                        <FontAwesomeIcon className="icon" icon='hand-point-right'/>
+                        Demo</a> 
+                    }
+                    <br/>
                     <a target="_blank" rel="noreferrer" href={codeUrl} style={{color}}>
                     <FontAwesomeIcon className="icon" icon='code'/>
                     Code </a>

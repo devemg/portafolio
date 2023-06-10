@@ -1,49 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ContactItem } from "../../models/contact-item";
+import { FormComponent, FormField } from "../../components/form/FormComponent";
 import "./ContactPage.scss";
-import {
-  faLinkedin,
-  faGoogle,
-  faGithub,
-  faGitlab,
-} from "@fortawesome/free-brands-svg-icons";
-import { FormComponent } from "../../components/form/FormComponent";
-import { FormField } from "../../components/form/FormComponent";
-
-const contact: ContactItem[] = [
-  {
-    id: 1,
-    social: "LinkedIn",
-    username: "Emely García",
-    iconClass: "linkedin",
-    icon: faLinkedin,
-    link: "https://linkedin.com/in/emely-garciam",
-  },
-  {
-    id: 2,
-    social: "Email",
-    username: "garciam.emm@gmail.com",
-    iconClass: "google",
-    icon: faGoogle,
-    link: "garciam.emm@gmail.com",
-  },
-  {
-    id: 3,
-    social: "Github",
-    username: "devemg",
-    iconClass: "github",
-    icon: faGithub,
-    link: "https://github.com/devemg",
-  },
-  {
-    id: 4,
-    social: "Gitlab",
-    username: "devemg",
-    iconClass: "gitlab",
-    icon: faGitlab,
-    link: "https://gitlab.com/devemg",
-  },
-];
+import contact from "../../data/contact.data";
 
 const formFields: FormField[] = [
   {

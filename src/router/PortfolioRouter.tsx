@@ -5,6 +5,7 @@ import { ErrorPage } from "../pages/error-page/ErrorPage";
 import { ProjectsPage } from "../pages/projects/ProjectsPage";
 import { SkillsPage } from "../pages/skills/SkillsPage";
 import { PortfolioApp } from "../layout/PortfolioApp/PortfolioApp";
+import { ProjectDetailPage } from "../pages/project-detail/ProjectDetailPage";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <ProjectsPage />,
+      },
+      {
+        path: "projects/:id",
+        element: <ProjectDetailPage />,
       },
       {
         path: "contact",

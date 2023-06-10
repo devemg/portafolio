@@ -1,0 +1,29 @@
+@use '../../assets/styles/breakpoints.scss' as b;
+
+.form {
+    &-field {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        padding: 12px 8px;
+        font-family: var(--font-family, inherit);
+        border-radius: 3px;
+        border: 1px solid #FFF;
+        background: #303030;
+        &:focus-visible {
+            outline:none;
+        }
+    }
+
+    button[type="submit"] {
+        margin-top: 10px;
+        @include b.small {
+            width: 100%;
+          }
+    }
+}

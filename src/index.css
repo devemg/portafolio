@@ -1,0 +1,39 @@
+:root {
+  font-family: 'Ubuntu', Inter, sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --primary-color: #7E2601;
+  --accent-color: #a2c11c;
+  --primary-color-text: #FFFFFF;
+  --primary-color-text-hover: rgb(223, 223, 223);
+  --font-family: font-family: 'Ubuntu', Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-button {
+  background: var(--accent-color, #FFFFFF);
+  color: var(--primary-color-text, #000);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  font-size: medium;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+}

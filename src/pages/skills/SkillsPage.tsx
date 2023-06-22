@@ -1,13 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./SkillsPage.scss";
 import skills from "../../data/skills.data";
 import { CardComponent } from "../../components/card/CardComponent";
+import { useAnalytics } from "../../hooks/useAnalytics";
 
 
 export const SkillsPage = () => {
   const [skillSelected, setSkillSelected] = useState(skills[0]);
-
+  const { sendEvent } = useAnalytics();
+  useEffect(() => {
+    sendEvent('ViewSkills');
+  }, []);
   return (
     <div className="skills">
       <CardComponent style = {{

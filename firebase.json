@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "build",
+    "site": "devemg-f044d",
     "ignore": [
       "firebase.json",
       "**/.*",

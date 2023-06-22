@@ -12,7 +12,7 @@ export interface ProjectItem {
     logo: string;
 }
 
-interface ProjectCredentials {
+export interface ProjectCredentials {
     username: string;
     password: string;
     message: string;

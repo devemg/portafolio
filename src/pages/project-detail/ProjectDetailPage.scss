@@ -1,0 +1,73 @@
+.info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+  &-logo {
+    width: 25%;
+  }
+
+  &-description,
+  &-demo-description {
+    text-align: justify;
+  }
+
+  &-links {
+    display: flex;
+    gap: 10px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-sizing: border-box;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      width: fit-content;
+      margin: 10px 0;
+      color: #fff;
+      position: relative;
+      box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+      transition: all 0.25s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.credentials {
+  margin: 25px 0;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 12px;
+  transform: rotate(5deg);
+  box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+
+        
+        &::before {
+            content: '';
+            background-color: rgba(44, 44, 44, 0.9);
+            box-shadow: 5px 4px 8px -3px rgba(0,0,0,0.54);
+            -webkit-box-shadow: 5px 4px 8px -3px rgba(0,0,0,0.54);
+            -moz-box-shadow: 5px 4px 8px -3px rgba(0,0,0,0.54);
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+      }
+
+}

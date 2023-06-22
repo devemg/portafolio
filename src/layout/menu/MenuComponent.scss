@@ -27,7 +27,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 0 8px 8px 0;        
+        border-radius: 0 8px 8px 0;   
+             
         @include b.mobile {
             border-radius: 0 0 8px 8px;
             padding: 12px 10px;
@@ -37,7 +38,7 @@
             flex: auto;
             display: none;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: normal;
             writing-mode: vertical-lr;
             transform: rotate(180deg);
             @include b.mobile {

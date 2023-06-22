@@ -1,20 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./ProjectDetailPage.scss";
 import { useMemo, useState } from "react";
 import projects from "../../data/projects.data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ProjectCredentials, ProjectItem } from "../../models/project-item";
-import { faHandPointRight, faCode, faKey } from "@fortawesome/free-solid-svg-icons";
+import { faHandPointRight, faCode, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { CardComponent } from "../../components/card/CardComponent";
 
 export const ProjectDetailPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [project, setProject] = useState<ProjectItem>();
+  
   useMemo(() => {
     const p = projects.find((p) => p.id === id);
     setProject(p);
   }, [id]);
+
   if (!project) return;
+
+  const onBack = () => {
+     navigate(-1);
+  }
+
   const {
     name,
     background,
@@ -30,10 +38,13 @@ export const ProjectDetailPage = () => {
     <div className="info">
       <CardComponent
         style={{
-          padding: "1rem 3rem",
+          padding: "2rem 3rem 3rem 4rem",
         }}
       >
+        <div className="info-logo-container">
+        <FontAwesomeIcon size="2x" className="info-logo-arrow" icon={faChevronLeft} onClick={onBack} />
         <img className="info-logo" src={logo} alt={name} />
+        </div>
         <p className="info-description">{description}</p>
         { demoUrl && <p className="info-demo-description">{demoDescription}</p> }
         <div className="info-links">

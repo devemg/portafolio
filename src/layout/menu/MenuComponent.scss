@@ -19,7 +19,7 @@
 
     &-item {
         gap: 10px;
-        background-color: var(--primary-color, #FFF);
+        background-color: #CCCCCC;
         color: var(--primary-color-text, #000);
         text-decoration: none;
         padding: 15px 10px;
@@ -27,7 +27,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 0 8px 8px 0;   
+        border-radius: 0 8px 8px 0; 
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.75);
+        
+        &-icon {
+            color: #4a5908;
+        }
              
         @include b.mobile {
             border-radius: 0 0 8px 8px;

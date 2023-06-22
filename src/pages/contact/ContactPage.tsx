@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FormComponent, FormField } from "../../components/form/FormComponent";
 import "./ContactPage.scss";
 import contact from "../../data/contact.data";
+import { useAnalytics } from "../../hooks/useAnalytics";
+import { useEffect } from "react";
 
 const formFields: FormField[] = [
   {
@@ -25,6 +27,10 @@ const formFields: FormField[] = [
 ];
 
 export const ContactPage = () => {
+  const { sendEvent } = useAnalytics();
+  useEffect(() => {
+    sendEvent('ViewContact');
+  }, []);
   return (
     <div className="contact">
       <h2>Let's get in touch </h2>

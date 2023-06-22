@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
+import { useAnalytics } from '../../hooks/useAnalytics';
 import './AboutMePage.scss';
 
 export const AboutMePage = () => {
+  const { sendEvent } = useAnalytics();
+  useEffect(() => {
+    sendEvent('ViewHome');
+  }, []);
   return (
     <div className='about'>
         <h1>Emely Garcia</h1>

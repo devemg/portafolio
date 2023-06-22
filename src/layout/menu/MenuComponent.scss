@@ -18,9 +18,7 @@
     }
 
     &-item {
-        display: flex;
         gap: 10px;
-        justify-content: space-between;
         background-color: var(--primary-color, #FFF);
         color: var(--primary-color-text, #000);
         text-decoration: none;

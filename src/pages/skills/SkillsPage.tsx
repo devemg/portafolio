@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import "./SkillsPage.scss";
 import skills from "../../data/skills.data";
+import { CardComponent } from "../../components/card/CardComponent";
 
 
 export const SkillsPage = () => {
@@ -9,7 +10,10 @@ export const SkillsPage = () => {
 
   return (
     <div className="skills">
-      <div className="skills-card">
+      <CardComponent style = {{
+        display: 'flex',
+        padding: '1rem',
+      }}>
         <div className="skills-card-content">
           <h1>{skillSelected.title}</h1>
           <div className="skills-card-content-data">
@@ -30,7 +34,7 @@ export const SkillsPage = () => {
             ></span>
           ))}
         </div>
-      </div>
+      </CardComponent>
     </div>
   );
 };

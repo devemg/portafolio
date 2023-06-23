@@ -3,4 +3,9 @@ export declare type EventName =
   | "ViewHome"
   | "ViewProjects"
   | "ViewSkills"
-  | "ViewContact";
+  | "ViewContact"
+  | 'ClickLinkedin'
+  | 'ClickGithub'
+  | 'ClickEmail'
+  | 'ClickGitlab'
+  ;

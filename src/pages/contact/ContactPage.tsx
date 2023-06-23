@@ -29,8 +29,25 @@ const formFields: FormField[] = [
 export const ContactPage = () => {
   const { sendEvent } = useAnalytics();
   useEffect(() => {
-    sendEvent('ViewContact');
+    sendEvent("ViewContact");
   }, []);
+
+  const sendClickEvent = (social: string) => {
+    switch (social) {
+      case "LinkedIn":
+        sendEvent("ClickLinkedin");
+        break;
+      case "Email":
+        sendEvent("ClickEmail");
+        break;
+      case "Github":
+        sendEvent("ClickGithub");
+        break;
+      case "Gitlab":
+        sendEvent("ClickGitlab");
+        break;
+    }
+  };
   return (
     <div className="contact">
       <h2>Let's get in touch </h2>
@@ -46,6 +63,7 @@ export const ContactPage = () => {
               onClick={(ev) => {
                 if (item.id === 2) ev.preventDefault();
                 navigator.clipboard.writeText(item.link);
+                sendClickEvent(item.social);
               }}
             >
               <FontAwesomeIcon size="3x" icon={item.icon} />

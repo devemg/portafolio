@@ -8,4 +8,7 @@ export declare type EventName =
   | 'ClickGithub'
   | 'ClickEmail'
   | 'ClickGitlab'
+  | 'ViewProjectDetail'
+  | 'ClickProjectCode'
+  | 'ClickProjectDemo'
   ;

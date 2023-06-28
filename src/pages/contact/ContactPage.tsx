@@ -11,18 +11,24 @@ const formFields: FormField[] = [
     name: "name",
     type: "text",
     placeholder: "Your Name",
+    initValue: '',
+    validator: [ (value: string) => value.length >= 1, 'El nombre es obligatorio.']
   },
   {
     label: "Email",
     name: "email",
     type: "email",
     placeholder: "Your Email",
+    initValue: '',
+    validator:  [ (value: string) => value.includes('@'), 'El correo debe de tener una @']
   },
   {
     label: "Message",
     name: "message",
     type: "textarea",
     placeholder: "Your Message",
+    initValue: '',
+    validator: [(value: string) => value.length >= 1, 'El mensaje es obligatorio.']
   },
 ];
 

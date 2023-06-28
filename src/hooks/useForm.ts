@@ -74,5 +74,6 @@ export const useForm = (fields: FormField[]) => {
     onInputChange,
     onResetForm,
     isFormValid,
+    formValidation
   };
 };

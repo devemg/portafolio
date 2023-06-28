@@ -6,21 +6,43 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ProjectCredentials, ProjectItem } from "../../models/project-item";
 import { faHandPointRight, faCode, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { CardComponent } from "../../components/card/CardComponent";
+import { useAnalytics } from "../../hooks/useAnalytics";
 
 export const ProjectDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { sendEvent } = useAnalytics();
   const [project, setProject] = useState<ProjectItem>();
   
   useMemo(() => {
     const p = projects.find((p) => p.id === id);
     setProject(p);
+    if (p) sendEvent('ViewProjectDetail', {
+      projectName: p.name,
+      projectId: p.id,
+    });
   }, [id]);
-
+  
   if (!project) return;
 
   const onBack = () => {
      navigate(-1);
+  }
+
+  const onCodeClick = () => {
+    sendEvent('ClickProjectCode', {
+      projectName: project.name,
+      projectId: project.id,
+      codeUrl: project.codeUrl,
+    });
+  }
+
+  const onDemoClick = () => {
+    sendEvent('ClickProjectDemo', {
+      projectName: project.name,
+      projectId: project.id,
+      demoUrl: project.demoUrl
+    });
   }
 
   const {
@@ -57,6 +79,7 @@ export const ProjectDetailPage = () => {
               style={{
                 background: color,
               }}
+              onClick={onDemoClick}
             >
               <FontAwesomeIcon icon={faHandPointRight} />
               Demo
@@ -70,6 +93,7 @@ export const ProjectDetailPage = () => {
             style={{
               background: color,
             }}
+            onClick={onCodeClick}
           >
             <FontAwesomeIcon icon={faCode} />
             Code

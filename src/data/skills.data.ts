@@ -1,6 +1,5 @@
 import { faAngular, faAws, faBitbucket, faDigitalOcean, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faPython, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
 import { SkillItem } from "../models/skill-category-item";
-import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTypescript } from "../assets/icons/faTypesctipt";
 import { faCSharp } from "../assets/icons/faCSharp";
 import { faCPlusPlus } from "../assets/icons/faCPlusPlus";

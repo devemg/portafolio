@@ -77,6 +77,7 @@ export const ContactPage = () => {
           {messageSent && <p>Message Sent!</p> } 
         </div>
       </div>
+      <footer>&copy; 2023 - Emely Garcia - All rights reserved</footer>
     </div>
   );
 };

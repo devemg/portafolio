@@ -20,7 +20,6 @@ export const PortfolioApp = () => {
         <Outlet></Outlet>
       </div>
     </div>
-     {/* <footer>&copy; 2023 - Emely Garcia - All rights reserved</footer> */}
     </>
   )
 }

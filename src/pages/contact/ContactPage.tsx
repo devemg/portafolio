@@ -54,6 +54,11 @@ export const ContactPage = () => {
         break;
     }
   };
+
+  const sendSubmitEvent = (formData: any) => {
+    sendEvent('SubmitContactForm', formData);
+    
+  }
   return (
     <div className="contact">
       <h2>Let's get in touch </h2>
@@ -89,6 +94,7 @@ export const ContactPage = () => {
           <FormComponent
             fields={formFields}
             buttonText="Send Message"
+            submitFormEvent={sendSubmitEvent}
           ></FormComponent>
         </div>
       </div>

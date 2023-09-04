@@ -1,6 +1,25 @@
 import { faAngular, faAws, faBitbucket, faDigitalOcean, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faPython, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
 import { SkillItem } from "../models/skill-category-item";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
+import { faTypescript } from "../assets/icons/faTypesctipt";
+import { faCSharp } from "../assets/icons/faCSharp";
+import { faCPlusPlus } from "../assets/icons/faCPlusPlus";
+import { faPreact } from "../assets/icons/faPreact";
+import { faJquery } from "../assets/icons/faJQuery";
+import { faIonic } from "../assets/icons/faIonic";
+import { faExpress } from "../assets/icons/faExpress";
+import { faAzure } from "../assets/icons/faAzure";
+import { faMysql } from "../assets/icons/faMysql";
+import { faSqlserver } from "../assets/icons/faSQLServer";
+import { faMongo } from "../assets/icons/faMongo";
+import { faDynamo } from "../assets/icons/faDynamo";
+import { faDotnet } from "../assets/icons/faDotnet";
+import { faVisualStudio } from "../assets/icons/faVisualStudio";
+import { faVisualCode } from "../assets/icons/faVisualCode";
+import { faIntelij } from "../assets/icons/faIntelij";
+import { faDatagrip } from "../assets/icons/faDatagrip";
+import { faEclipse } from "../assets/icons/faEclipse";
+import { faNetbeans } from "../assets/icons/faNetbeans";
 
 const skills: SkillItem[] = [
     {
@@ -15,7 +34,7 @@ const skills: SkillItem[] = [
         {
           id: 2,
           title: "Typescript",
-          icon: faSquare,
+          icon: faTypescript,
         }, 
         {
           id: 3,
@@ -25,12 +44,12 @@ const skills: SkillItem[] = [
         {
           id: 4,
           title: "C#",
-          icon: faSquare,
+          icon: faCSharp,
         }, 
         {
           id: 5,
-          title: "C/C++",
-          icon: faSquare,
+          title: "C++",
+          icon: faCPlusPlus,
         }, 
         {
           id: 6,
@@ -58,22 +77,27 @@ const skills: SkillItem[] = [
       {
         id: 3,
         title: 'preact',
-        icon: faSquare
+        icon: faPreact
       }, 
       {
         id: 4,
         title: 'JQuery',
-        icon: faSquare,
+        icon: faJquery,
       },
       {
         id: 5,
         title: 'Ionic',
-        icon: faSquare,
+        icon: faIonic,
       },
       {
         id: 6,
         title: 'Express',
-        icon: faSquare,
+        icon: faExpress,
+      },
+      {
+        id: 7,
+        title: '.NET',
+        icon: faDotnet,
       }
     ],
     },
@@ -99,7 +123,7 @@ const skills: SkillItem[] = [
         {
           id: 4,
           title: 'Azure',
-          icon: faSquare,
+          icon: faAzure,
         },
       ]
     },
@@ -110,27 +134,22 @@ const skills: SkillItem[] = [
         {
           id: 1,
           title: 'MySQL',
-          icon: faSquare,
+          icon: faMysql,
         },
         {
           id: 2,
-          title: 'SQP Server',
-          icon: faSquare,
-        },
-        {
-          id: 3,
-          title: 'OracleDB',
-          icon: faSquare,
+          title: 'SQL Server',
+          icon: faSqlserver,
         },
         {
           id: 4,
           title: 'MongoDB',
-          icon: faSquare,
+          icon: faMongo,
         },
         {
           id: 5,
           title: 'DynamoDB',
-          icon: faSquare,
+          icon: faDynamo,
         },
       ]
     },
@@ -204,32 +223,32 @@ const skills: SkillItem[] = [
         {
           id: 1,
           title: 'Visual Studio',
-          icon: faSquare,
+          icon: faVisualStudio,
         },
         {
           id: 2,
           title: 'Visual Studio Code',
-          icon: faSquare,
+          icon: faVisualCode,
         },
         {
           id: 3,
           title: 'IntelliJ IDEA',
-          icon: faSquare,
+          icon: faIntelij,
         },
         {
           id: 4,
           title: 'Data Grip',
-          icon: faSquare,
+          icon: faDatagrip,
         },
         {
           id: 5,
           title: 'Eclipse',
-          icon: faSquare,
+          icon: faEclipse,
         },
         {
           id: 6,
           title: 'Netbeans',
-          icon: faSquare,
+          icon: faNetbeans,
         },
       ]
     },

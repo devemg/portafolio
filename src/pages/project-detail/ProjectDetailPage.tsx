@@ -23,7 +23,7 @@ export const ProjectDetailPage = () => {
     });
   }, [id]);
   
-  if (!project) return;
+  if (!project) return <></>;
 
   const onBack = () => {
      navigate(-1);

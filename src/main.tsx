@@ -5,7 +5,7 @@ import { PortfolioRouter } from './router/PortfolioRouter'
 import './firebase/config';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  // <React.StrictMode>
+  <React.StrictMode>
       <PortfolioRouter/>
-  // </React.StrictMode>,
+  </React.StrictMode>
 )

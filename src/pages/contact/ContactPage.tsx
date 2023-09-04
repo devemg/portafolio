@@ -72,7 +72,6 @@ export const ContactPage = () => {
               target="_blank"
               rel="noreferrer"
               onClick={(ev) => {
-                if (item.id === 2) ev.preventDefault();
                 navigator.clipboard.writeText(item.link);
                 sendClickEvent(item.social);
               }}

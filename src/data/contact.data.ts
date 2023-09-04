@@ -21,7 +21,7 @@ const contact: ContactItem[] = [
       username: "garciam.emm@gmail.com",
       iconClass: "google",
       icon: faGoogle,
-      link: "garciam.emm@gmail.com",
+      link: "mailto:garciam.emm@gmail.com?Subject=Hi Emely!",
     },
     {
       id: 3,

@@ -25,7 +25,6 @@ export const useForm = (fields: FormField[]) => {
   const [ formValidation, setFormValidation ] = useState<any>({});
 
   useEffect(() => {
-    console.log('change in fields, set init values')
     const values = getInitvalues(fields);
     const validations = getValidators(fields);
     setInitValues(values);

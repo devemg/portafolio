@@ -11,12 +11,12 @@ export interface FormField {
 }
 
 
-export const FormComponent = ({ fields, buttonText }: any) => {
+export const FormComponent = ({ fields, buttonText, submitFormEvent }: any) => {
   const { onInputChange, formState, isFormValid, formValidation } = useForm(fields);
 
   const onsubmit = (event: any) => {
     event.preventDefault();
-    console.log(formState);
+    if (submitFormEvent) submitFormEvent(formState);
   }
   
   return (

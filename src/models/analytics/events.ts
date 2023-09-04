@@ -11,4 +11,5 @@ export declare type EventName =
   | 'ViewProjectDetail'
   | 'ClickProjectCode'
   | 'ClickProjectDemo'
+  | 'SubmitContactForm'
   ;

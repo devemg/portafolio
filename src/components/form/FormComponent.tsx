@@ -1,4 +1,4 @@
-import { useForm } from "../../hooks/useForm";
+import { useFormik } from "formik";
 import "./FormComponent.scss";
 
 export interface FormField {
@@ -7,38 +7,64 @@ export interface FormField {
   type: string;
   placeholder: string;
   initValue: unknown;
-  validator: [(value: any) => boolean, string]; // callback validation, errorMessage
 }
 
+const getInitvalues = (fields: FormField[]) => {
+  const values: any = {};
+  fields.forEach((f) => {
+    values[f.name] = f.initValue;
+  });
+  return values;
+};
 
-export const FormComponent = ({ fields, buttonText, submitFormEvent }: any) => {
-  const { onInputChange, formState, isFormValid, formValidation } = useForm(fields);
+export const FormComponent = ({ fields, buttonText, validateFunction, submitFormEvent }: any) => {
+  const formik = useFormik({
+    initialValues: getInitvalues(fields),
+    onSubmit: (values) => {
+      if (submitFormEvent) submitFormEvent(values);
+      formik.resetForm();
+    },
+    validate: validateFunction,
+  });
 
-  const onsubmit = (event: any) => {
-    event.preventDefault();
-    if (submitFormEvent) submitFormEvent(formState);
-  }
-  
   return (
-    <form className="form">
+    <form className="form" autoComplete="off" onSubmit={formik.handleSubmit}>
       {fields.map((field: FormField) => (
         <div key={field.name} className="form-field">
           <label htmlFor={field.name}>{field.label}</label>
           {field.type === "textarea" ? (
-            <textarea name={field.name} rows={3} onChange={onInputChange}
-            placeholder={field.placeholder}></textarea>
+            <textarea
+              rows={3}
+              name={field.name}
+              placeholder={field.placeholder}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values[field.name]}
+            ></textarea>
           ) : (
             <input
               type={field.type}
               name={field.name}
               placeholder={field.placeholder}
-              onChange={onInputChange}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values[field.name]}
             />
           )}
-          <span className="form-field-error">{formValidation[field.name]}</span>
+          {formik.touched[field.name] && formik.errors[field.name] && (
+            <span className="form-field-error">
+              {(formik.errors as any)[field.name]}
+            </span>
+          )}
         </div>
       ))}
-      <button disabled={!isFormValid} className={["primary-button", !isFormValid ? 'disabled' : ''].join(' ')} onClick={onsubmit} type="submit">{buttonText}</button>
+      <button
+        disabled={!(formik.isValid && formik.dirty)}
+        className="primary-button"  
+        type="submit"
+      >
+        {buttonText}
+      </button>
     </form>
   );
 };

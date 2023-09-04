@@ -46,6 +46,10 @@
     }
     &-form-container {
       flex: 1;
+
+      p {
+        transition: all 5ms;
+      }
       // background: gray;
     }
   }

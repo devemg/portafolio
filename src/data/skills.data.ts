@@ -60,7 +60,7 @@ const skills: SkillItem[] = [
     },
     {
       id: 2,
-      title: "FrameWorks and librearies",
+      title: "Frameworks and Libraries",
       tools: [{
         id: 1,
         title: "Angular",

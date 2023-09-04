@@ -18,18 +18,3 @@
         padding: 15px;
     }
 }
-
-footer {
-    display: none;
-    @include b.small {
-        position: relative;
-    }
-    position: absolute;
-    bottom: 0;
-    text-align: right;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    color: #DEDEDE;
-    opacity: 0.5;
-}

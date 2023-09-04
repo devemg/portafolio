@@ -1,0 +1,118 @@
+#skills {
+    padding-left: 2em;
+    padding-right: 2em;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .grid {
+        display: grid;
+        padding: 35px 10em 0 10em;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        grid-gap: 1em;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0 !important;
+        padding: 10px 0 0 0 ;
+    }
+
+    .item-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 35px;
+
+        .front {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list {
+            display: inline-block;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                display: inline;
+                padding-right: 5px;
+            }
+
+            li:after {
+                content: ", ";
+            }
+            
+            li:after {
+                content: ", ";
+            }
+            
+            li:nth-last-child(2):after {
+                content: " y ";  
+            }
+
+            li:last-child:after {
+                content: ".";
+            }
+
+        }
+
+        img {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #skills {
+        .grid {
+            padding: 0 35px 0 35px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #skills {
+
+        .image-arrow{
+            display: none;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2,1fr);
+            padding: 0 15px 0 15px;
+        }
+
+        .item-grid {
+            padding-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    #skills {
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        .grid {
+            grid-template-columns: repeat(1,1fr);
+            padding: 0;
+
+            .item-grid {
+                padding-top: 35px;
+            }
+        }
+    }
+}

@@ -29,6 +29,11 @@
         display: flex;
         justify-content: space-evenly;
 
+        @include b.medium {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
         @include b.small {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -54,7 +59,7 @@
       align-items: center;
 
       span {
-        width: 4px;
+        width: 8px;
         height: 25px;
         background: #bdbdbd;
         border-radius: 2px;

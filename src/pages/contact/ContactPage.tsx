@@ -1,38 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FormComponent, FormField } from "../../components/form/FormComponent";
+import { FormComponent } from "../../components/form/FormComponent";
 import "./ContactPage.scss";
 import contact from "../../data/contact.data";
 import { useAnalytics } from "../../hooks/useAnalytics";
-import { useEffect } from "react";
-
-const formFields: FormField[] = [
-  {
-    label: "Name",
-    name: "name",
-    type: "text",
-    placeholder: "Your Name",
-    initValue: '',
-    validator: [ (value: string) => value.length >= 1, 'El nombre es obligatorio.']
-  },
-  {
-    label: "Email",
-    name: "email",
-    type: "email",
-    placeholder: "Your Email",
-    initValue: '',
-    validator:  [ (value: string) => value.includes('@'), 'El correo debe de tener una @']
-  },
-  {
-    label: "Message",
-    name: "message",
-    type: "textarea",
-    placeholder: "Your Message",
-    initValue: '',
-    validator: [(value: string) => value.length >= 1, 'El mensaje es obligatorio.']
-  },
-];
+import { useEffect, useState } from "react";
+import { contactFormFields, validateContactForm } from "./contactFields";
 
 export const ContactPage = () => {
+  const [messageSent, setMessageSent] = useState(false);
   const { sendEvent } = useAnalytics();
   useEffect(() => {
     sendEvent("ViewContact");
@@ -56,8 +31,11 @@ export const ContactPage = () => {
   };
 
   const sendSubmitEvent = (formData: any) => {
+    setMessageSent(true);
     sendEvent('SubmitContactForm', formData);
-    
+    setTimeout(() => {
+      setMessageSent(false);
+    }, 1000);
   }
   return (
     <div className="contact">
@@ -71,7 +49,7 @@ export const ContactPage = () => {
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              onClick={(ev) => {
+              onClick={() => {
                 navigator.clipboard.writeText(item.link);
                 sendClickEvent(item.social);
               }}
@@ -91,10 +69,12 @@ export const ContactPage = () => {
         <div className="contact-data-form-container">
           <p>I will be happy to read your message!</p>
           <FormComponent
-            fields={formFields}
+            fields={contactFormFields}
             buttonText="Send Message"
             submitFormEvent={sendSubmitEvent}
+            validateFunction={validateContactForm}
           ></FormComponent>
+          {messageSent && <p>Message Sent!</p> } 
         </div>
       </div>
     </div>

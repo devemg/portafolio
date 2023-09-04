@@ -12,7 +12,7 @@ const projects: ProjectItem[] = [
       demoDescription: 'Below is the link to access the administration panel. ',
       codeUrl:'https://github.com/devemg/randomAQ',
       logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140450/my-portfolio/apps/title-white_d3msus.svg',
-      logoSM: 'https://devemg-assets.s3.amazonaws.com/projects/aq-sm.svg',
+      logoSM: 'https://res.cloudinary.com/devemg/image/upload/v1693850951/my-site-v2/aq-icon_vr53cg.svg',
       background: 'linear-gradient(218.49deg, #C04848 5.98%, #480048 98.42%)',
       color: '#C04848',
       credentials: {
@@ -31,7 +31,7 @@ const projects: ProjectItem[] = [
       background: 'linear-gradient(29deg, rgba(75,59,29,1) 0%, rgba(179,116,0,1) 33%, rgba(238,155,0,1) 97%)',
       color: 'rgba(238,155,0,1)',
       logo: 'https://res.cloudinary.com/devemg/image/upload/v1626140964/my-portfolio/apps/Group_1_gwampj.svg',
-      logoSM: 'https://devemg-assets.s3.amazonaws.com/projects/fm-sm.svg',
+      logoSM: 'https://res.cloudinary.com/devemg/image/upload/v1693851339/my-site-v2/fm-white_fm5ame.svg',
       credentials: {
         username: 'invitado@fastmessages.com',
         password:'fastmessages',
@@ -48,7 +48,7 @@ const projects: ProjectItem[] = [
       background: 'linear-gradient(236.65deg, #4B79A1 1.05%, #1D384F 53.56%, #1D384F 63.5%, #1D384F 72.15%, #1D384F 83.14%, #1D384F 93.48%)',
       color: '#4B79A1',
       logo: 'https://res.cloudinary.com/devemg/image/upload/v1683515108/wheather-logo_jjswcc.svg',
-      logoSM: 'https://devemg-assets.s3.amazonaws.com/projects/w-sm.svg',
+      logoSM: 'https://res.cloudinary.com/devemg/image/upload/v1693850951/my-site-v2/wtv_d4moh5.svg',
     },
     {
       id:'789',
@@ -60,7 +60,7 @@ const projects: ProjectItem[] = [
       background: ' linear-gradient(180deg, #721E34 0%, #231221 40.63%, #050E1A 100%)',
       color: '#C52A47',
       logo: 'https://res.cloudinary.com/devemg/image/upload/v1683514859/playely-logo_fev4yk.svg',
-      logoSM: 'https://devemg-assets.s3.amazonaws.com/projects/pl-sm.svg',
+      logoSM: 'https://res.cloudinary.com/devemg/image/upload/v1693851606/my-site-v2/playely_ot63hl.svg',
       credentials: {
         username: 'any email',
         password:'any password with length greater than 4',

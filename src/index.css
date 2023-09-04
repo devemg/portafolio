@@ -13,9 +13,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --primary-color: #7E2601;
+  --primary-color: #DA4167;
+  --accent-color: #DFBBB1;
   --error-color: crimson;
-  --accent-color: #a2c11c;
+  --menu-bg-color: #424B54;
   --primary-color-text: #FFFFFF;
   --primary-color-text-hover: rgb(223, 223, 223);
   --font-family: font-family: 'Ubuntu', Inter, sans-serif;
@@ -27,7 +28,7 @@ body {
 }
 
 .primary-button {
-  background: var(--accent-color, #FFFFFF);
+  background: var(--primary-color, #FFFFFF);
   color: var(--primary-color-text, #000);
   border: none;
   padding: 0.7rem 2rem;

@@ -14,7 +14,7 @@ export class SplashComponent implements AfterViewInit {
     this.animation = gsap.timeline({defaults: { duration:1 }, repeatDelay: 0.4 });
     this.animation.to(".firstName", {text:"Emely", ease:"power1.in", });
     this.animation.to(".surName", {text: "García", ease: "power1.in"});
-    this.animation.to(".name p", { color: "#8d3dae", ease: 'none', repeat: -1, duration: 2, yoyo: true });
+    this.animation.to(".name p", { color: "#DA4167", ease: 'none', repeat: -1, duration: 2, yoyo: true });
     this.animation.to(".message", { opacity: 1, y: 15 }, "<");
     this.animation.to(".message span", { text: "", repeat: -1, yoyo: true, duration: 2 });
 

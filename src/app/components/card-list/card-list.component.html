@@ -1,0 +1,10 @@
+@if (itemList) {
+    <div class="list">
+        <h2>{{itemList.title}}</h2>
+        <div class="list-container">
+            @for (item of itemList.items; track $index) {
+                <app-card [item]="item" [aspectRatio]="itemList.aspectRatio" [style]="itemList.style"></app-card>
+            }
+        </div>
+    </div>
+}

@@ -2,14 +2,20 @@ export interface ProjectItem {
     id: string;
     name: string;
     description: string;
-    demoDescription: string;
-    background: string;
+    background?: string;
     color: string;
-    codeUrl: string;
+    codeUrl?: string;
     demoUrl?: string;
-    credentials?: ProjectCredentials;
-    logoSM: string;
-    logo: string;
+    logoSM?: string;
+    images?: ProjectImage[];
+}
+
+export interface ProjectImage {
+    id: number;
+    src: string;
+    alt?: string;
+    width: number;
+    height: number;
 }
 
 export interface ProjectCredentials {

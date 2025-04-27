@@ -1,15 +1,14 @@
 import {
     faGithub,
-    faGitlab,
     faGoogle,
     faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { ContactItem } from "../models/contact-item";
+import { ContactItem } from "@models/contact-item";
 
-const contact: ContactItem[] = [
+export const devemgContacts: ContactItem[] = [
     {
       id: 1,
-      social: "LinkedIn",
+      name: "LinkedIn",
       username: "Emely García",
       iconClass: "linkedin",
       icon: faLinkedin,
@@ -17,7 +16,7 @@ const contact: ContactItem[] = [
     },
     {
       id: 2,
-      social: "Email",
+      name: "Email",
       username: "garciam.emm@gmail.com",
       iconClass: "google",
       icon: faGoogle,
@@ -25,21 +24,19 @@ const contact: ContactItem[] = [
     },
     {
       id: 3,
-      social: "Github",
+      name: "Github",
       username: "devemg",
       iconClass: "github",
       icon: faGithub,
       link: "https://github.com/devemg",
     },
-    {
-      id: 4,
-      social: "Gitlab",
-      username: "devemg",
-      iconClass: "gitlab",
-      icon: faGitlab,
-      link: "https://gitlab.com/devemg",
-    },
+    // {
+    //   id: 4,
+    //   name: "Gitlab",
+    //   username: "devemg",
+    //   iconClass: "gitlab",
+    //   icon: faGitlab,
+    //   link: "https://gitlab.com/devemg",
+    // },
   ];
   
-
-  export default contact;

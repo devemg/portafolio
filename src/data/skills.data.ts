@@ -1,26 +1,25 @@
-import { faAngular, faAws, faBitbucket, faDigitalOcean, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faPython, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
-import { SkillItem } from "../models/skill-category-item";
-import { faTypescript } from "../assets/icons/faTypesctipt";
-import { faCSharp } from "../assets/icons/faCSharp";
-import { faCPlusPlus } from "../assets/icons/faCPlusPlus";
-import { faPreact } from "../assets/icons/faPreact";
-import { faJquery } from "../assets/icons/faJQuery";
-import { faIonic } from "../assets/icons/faIonic";
-import { faExpress } from "../assets/icons/faExpress";
-import { faAzure } from "../assets/icons/faAzure";
-import { faMysql } from "../assets/icons/faMysql";
-import { faSqlserver } from "../assets/icons/faSQLServer";
-import { faMongo } from "../assets/icons/faMongo";
-import { faDynamo } from "../assets/icons/faDynamo";
-import { faDotnet } from "../assets/icons/faDotnet";
-import { faVisualStudio } from "../assets/icons/faVisualStudio";
-import { faVisualCode } from "../assets/icons/faVisualCode";
-import { faIntelij } from "../assets/icons/faIntelij";
-import { faDatagrip } from "../assets/icons/faDatagrip";
-import { faEclipse } from "../assets/icons/faEclipse";
-import { faNetbeans } from "../assets/icons/faNetbeans";
+import { faAngular, faAws, faBitbucket, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
+import { SkillItem } from "@models/skill-category-item";
+import { faTypescript } from "../assets/icons/faIcons/faTypesctipt";
+import { faCSharp } from "../assets/icons/faIcons/faCSharp";
+import { faTailwind } from "../assets/icons/faIcons/faTailwind";
+import { faPreact } from "../assets/icons/faIcons/faPreact";
+import { faJquery } from "../assets/icons/faIcons/faJQuery";
+import { faIonic } from "../assets/icons/faIcons/faIonic";
+import { faExpress } from "../assets/icons/faIcons/faExpress";
+import { faMysql } from "../assets/icons/faIcons/faMysql";
+import { faMongo } from "../assets/icons/faIcons/faMongo";
+import { faDynamo } from "../assets/icons/faIcons/faDynamo";
+import { faDotnet } from "../assets/icons/faIcons/faDotnet";
+import { faVisualStudio } from "../assets/icons/faIcons/faVisualStudio";
+import { faVisualCode } from "../assets/icons/faIcons/faVisualCode";
+import { faIntelij } from "../assets/icons/faIcons/faIntelij";
+import { faDatagrip } from "../assets/icons/faIcons/faDatagrip";
+import { faEclipse } from "../assets/icons/faIcons/faEclipse";
+import { faFirebase } from "../assets/icons/faIcons/faFirebase";
+import { faGSAP } from "../assets/icons/faIcons/faGSAP";
 
-const skills: SkillItem[] = [
+export const devemgSkills: SkillItem[] = [
     {
       id: 1,
       title: "Programming Languages",
@@ -45,16 +44,16 @@ const skills: SkillItem[] = [
           title: "C#",
           icon: faCSharp,
         }, 
-        {
-          id: 5,
-          title: "C++",
-          icon: faCPlusPlus,
-        }, 
-        {
-          id: 6,
-          title: "Python",
-          icon: faPython,
-        }, 
+        // {
+        //   id: 5,
+        //   title: "C++",
+        //   icon: faCPlusPlus,
+        // }, 
+        // {
+        //   id: 6,
+        //   title: "Python",
+        //   icon: faPython,
+        // }, 
       ],
     },
     {
@@ -64,9 +63,6 @@ const skills: SkillItem[] = [
         id: 1,
         title: "Angular",
         icon: faAngular,
-        // description: `Angular is my favorite framework. I first used it back in 2018 (It was on version 6 at the time) and haven't left it since.
-        // I love it because as a framework it provides everything you need to build applications. From the module system that allows lazy loading, to the excellent and understandable data binding and the forms handling to the CLI commands that allow you to generate almost any type of component in seconds.
-        // I have built and collaborated on several types of applications with angular, from simple CRUDs and content managers to complex streaming applications.`
       }, 
       {
         id: 2,
@@ -82,6 +78,16 @@ const skills: SkillItem[] = [
         id: 4,
         title: 'JQuery',
         icon: faJquery,
+      },
+      {
+        id: 41,
+        title: 'Tailwindcss',
+        icon: faTailwind,
+      },
+      {
+        id: 42,
+        title: 'GSAP',
+        icon: faGSAP,
       },
       {
         id: 5,
@@ -115,15 +121,20 @@ const skills: SkillItem[] = [
           icon: faGoogle,
         },
         {
-          id: 3,
-          title: 'Digital Ocean',
-          icon: faDigitalOcean,
-        },
-        {
-          id: 4,
-          title: 'Azure',
-          icon: faAzure,
-        },
+          id: 22,
+          title: 'Firebase',
+          icon: faFirebase
+        }
+        // {
+        //   id: 3,
+        //   title: 'Digital Ocean',
+        //   icon: faDigitalOcean,
+        // },
+        // {
+        //   id: 4,
+        //   title: 'Azure',
+        //   icon: faAzure,
+        // },
       ]
     },
     {
@@ -135,11 +146,11 @@ const skills: SkillItem[] = [
           title: 'MySQL',
           icon: faMysql,
         },
-        {
-          id: 2,
-          title: 'SQL Server',
-          icon: faSqlserver,
-        },
+        // {
+        //   id: 2,
+        //   title: 'SQL Server',
+        //   icon: faSqlserver,
+        // },
         {
           id: 4,
           title: 'MongoDB',
@@ -244,13 +255,11 @@ const skills: SkillItem[] = [
           title: 'Eclipse',
           icon: faEclipse,
         },
-        {
-          id: 6,
-          title: 'Netbeans',
-          icon: faNetbeans,
-        },
+        // {
+        //   id: 6,
+        //   title: 'Netbeans',
+        //   icon: faNetbeans,
+        // },
       ]
     },
   ];
-
-  export default skills;

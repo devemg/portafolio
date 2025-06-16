@@ -1,4 +1,4 @@
-import { faAngular, faAws, faBitbucket, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
+import { faAngular, faAws, faBitbucket, faDartLang, faFlutter, faGit, faGithub, faGithubSquare, faGitlab, faGoogle, faJava, faJenkins, faJira, faJsSquare, faReact, faSquareGitlab, faTrello } from "@fortawesome/free-brands-svg-icons";
 import { SkillItem } from "@models/skill-category-item";
 import { faTypescript } from "../assets/icons/faIcons/faTypesctipt";
 import { faCSharp } from "../assets/icons/faIcons/faCSharp";
@@ -44,11 +44,11 @@ export const devemgSkills: SkillItem[] = [
           title: "C#",
           icon: faCSharp,
         }, 
-        // {
-        //   id: 5,
-        //   title: "C++",
-        //   icon: faCPlusPlus,
-        // }, 
+        {
+          id: 5,
+          title: "Dart",
+          icon: faDartLang,
+        }, 
         // {
         //   id: 6,
         //   title: "Python",
@@ -93,6 +93,11 @@ export const devemgSkills: SkillItem[] = [
         id: 5,
         title: 'Ionic',
         icon: faIonic,
+      },
+      {
+        id: 5,
+        title: 'Flutter',
+        icon: faFlutter,
       },
       {
         id: 6,

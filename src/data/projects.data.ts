@@ -488,4 +488,68 @@ The project was developed following CI/CD best practices and managed through a s
       },
     ]
   },
+  {
+    id: 'tic-tac-toe-tv',
+    name: "Tic Tac Toe",
+    description: `Tic Tac Toe is a classic strategy game played on a 3x3 grid. Two players take turns marking spaces with their symbols (X and O). The first player to get three of their marks in a row wins!\n
+    I developed an engaging Tic Tac Toe game specifically designed for Samsung Smart TVs, ensuring seamless navigation using the TV remote. The app features a polished interface with smooth animations, making it enjoyable for players of all ages. Key elements include a custom splash screen and player name input via Samsung’s on-screen keyboard.\n
+    Built with React 19, Vite, and Zustand, the app delivers a fast and responsive experience. I implemented i18next for multilingual support and React Router for intuitive navigation. The project follows Samsung’s TV app guidelines, including proper remote control handling and TV-friendly UI design.\n
+    To streamline development, I set up a CI/CD pipeline that automatically handles builds and versioning (including Samsung TV builds!), with automated testing coming soon. This system keeps the releases consistent and makes submitting to the Samsung TV Store a breeze. Want to see how it all works? feel free to take a look!\n
+    Currently, the app is undergoing Samsung’s certification process and will soon be available on the Samsung TV Store. Once approved, users can download it directly on their Samsung Smart TVs for a fun and interactive gaming experience.`,
+    color: '#111827',
+    logoSM: "https://res.cloudinary.com/devemg/image/upload/v1750112184/my-portfolio/apps/tic-tac-toe-tv_svz5hh.png",
+    codeUrl: "https://github.com/devemg/tic-tac-toe-tv",
+    demoUrl: "https://devemg.github.io/tic-tac-toe-tv/",
+    images: [
+      {
+        id: 1,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113531/my-portfolio/apps/tic-tac-toe-tv/home_tqwklf.png",
+        alt: 'Home',
+      },
+      {
+        id: 2,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113618/my-portfolio/apps/tic-tac-toe-tv/image_2_mqgrrs.png",
+        alt: 'New Game',
+      },
+      {
+        id: 3,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113619/my-portfolio/apps/tic-tac-toe-tv/image_3_emvpux.png",
+        alt: 'Game board',
+      },
+      {
+        id: 4,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113620/my-portfolio/apps/tic-tac-toe-tv/image_4_cbqnyd.png",
+        alt: 'Scoreboard',
+      },
+      {
+        id: 5,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113716/my-portfolio/apps/tic-tac-toe-tv/image_5_jyhmd0.jpg",
+        alt: 'Instructions',
+      },
+      {
+        id: 6,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113619/my-portfolio/apps/tic-tac-toe-tv/image_6_nowfpc.png",
+        alt: 'Settings',
+      },
+      {
+        id: 7,
+        width: 1920,
+        height: 1080,
+        src: "https://res.cloudinary.com/devemg/image/upload/v1750113777/my-portfolio/apps/tic-tac-toe-tv/image_lflh6m.jpg",
+        alt: "Language selection"
+      }
+    ]
+  }
 ];
